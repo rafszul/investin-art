@@ -14,28 +14,3 @@
     </g>
   </g>
 </svg>
-<header fxLayout="row" fxLayoutAlign="center center">
-
-    <button md-button routerLink="/about" routerLinkActive="active">invest</button>
-    <button md-button routerLink="/signup" routerLinkActive="active">in</button>
-    <button md-button routerLink="/art" routerLinkActive="active">art</button>
-
-    <!--<header fxLayout="row" fxLayoutAlign="end center">
-    <button md-button>Click me!</button>-->
-
-</header>
-
-<button md-button (click)="onClick"><a [routerLink]="login">Login</a></button>
-
-<!-- This fills the remaining space of the current row -->
-<span class="example-fill-remaining-space"></span>
-
-<span>
-    <ul>
-      <li>
-        <!--<a [routerLink]="[ {outlets: { modal: 'login' } } ]">Login</a>-->
-        <a [routerLink]="login">Login</a>
-
-      </li>
-    </ul>
-  </span>

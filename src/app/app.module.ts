@@ -22,6 +22,7 @@ import { HelloComponent } from './hello/hello.component';
 import { OtherComponent } from './other/other.component';
 import { ArtistsComponent } from './artists/artists.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { AuthService } from './providers/auth.service';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     MaterialModule.forRoot(),
     FlexLayoutModule,
     AngularFireModule.initializeApp(firebaseConfig)  ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
