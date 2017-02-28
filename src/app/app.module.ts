@@ -19,6 +19,8 @@ import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { HelloComponent } from './hello/hello.component';
+import { OtherComponent } from './other/other.component';
+import { routing } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,8 @@ import { HelloComponent } from './hello/hello.component';
     FooterComponent,
     AboutComponent,
     GalleryComponent,
-    HelloComponent
+    HelloComponent,
+    OtherComponent
   ],
   imports: [
     BrowserModule,
