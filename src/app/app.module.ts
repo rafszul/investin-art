@@ -20,7 +20,8 @@ import { AboutComponent } from './about/about.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { HelloComponent } from './hello/hello.component';
 import { OtherComponent } from './other/other.component';
-import { routing } from './app-routing.module';
+import { ArtistsComponent } from './artists/artists.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,9 @@ import { routing } from './app-routing.module';
     AboutComponent,
     GalleryComponent,
     HelloComponent,
-    OtherComponent
+    OtherComponent,
+    ArtistsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
