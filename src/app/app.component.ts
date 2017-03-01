@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { MdDialog } from '@angular/material';
 import { AngularFire, AuthProviders, AuthMethods, FirebaseListObservable } from 'angularfire2';
 import { Router } from '@angular/router';
 
 import { AuthService } from './providers/auth.service';
+
 
 @Component({
   selector: 'investin-art-root',

@@ -1,3 +1,29 @@
+<md-card *ngFor="let item of items | async">
+
+    <md-card-title>{{ item.title }}</md-card-title>
+    <md-card-subtitle>Subtitle first</md-card-subtitle>
+    <md-card-content>
+        <p>This is supporting text.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+    </md-card-content>
+    <md-card-header>
+        <md-card-title>
+            <h5>{{ item.name }}</h5>
+        </md-card-title>
+        <img md-card-avatar src="{{ item.img }}">
+    </md-card-header>
+    <img md-card-image src="{{ item.img }}">
+    <md-card-content>
+        <h5><small>{{ item.phone }}</small></h5>
+        <p>email: {{ item.email }}</p>
+    </md-card-content>
+
+    <md-card-actions>
+        <button md-button><md-icon>chat</md-icon> Chat with {{ item.name }}</button>
+        <button md-button><md-icon>share</md-icon> Send {{ item.name }} a refferal</button>
+    </md-card-actions>
+</md-card>
+
 <!--<md-grid-list cols="2">
     <md-grid-tile>1</md-grid-tile>
     <md-grid-tile>2</md-grid-tile>

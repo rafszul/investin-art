@@ -24,6 +24,7 @@ import { ArtistsComponent } from './artists/artists.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AuthService } from './providers/auth.service';
 import { ContactComponent } from './contact/contact.component';
+import { ThankYouDialogComponent } from './thank-you-dialog/thank-you-dialog.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ContactComponent } from './contact/contact.component';
     OtherComponent,
     ArtistsComponent,
     NavbarComponent,
-    ContactComponent
+    ContactComponent,
+    ThankYouDialogComponent
   ],
   imports: [
     BrowserModule,

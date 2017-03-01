@@ -14,15 +14,34 @@ md-card {
     text-align: right;
 }
 
+md-card-content {
+    justify-content: space-between;
+}
+
+md-card-actions {
+    font-family: 'Ravi Prakash', cursive;
+    justify-content: space-between;
+    text-align: center;
+}
+
+md-card-title {
+    font-family: 'Ravi Prakash', cursive;
+}
+
+// md-card {
+//     font-family: 'Raleway', sans-serif;
+//     max-width: 90%;
+//     margin: 1em;
+//     text-align: right;
+// }
 // md-card-content {
 //     display: flex;
 //     justify-content: space-between;
 //     flex-wrap: wrap;
 // }
-md-input-container {
-    width: 100%;
-}
-
+// md-input-container {
+//     width: 100%;
+// }
 // md-card-actions {
 //     justify-content: flex-end;
 // }
