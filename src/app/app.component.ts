@@ -14,7 +14,7 @@ import { AuthService } from './providers/auth.service';
 export class AppComponent {
   title = 'investin-art works!';
 
-    private isLoggedIn: Boolean;
+  private isLoggedIn: Boolean;
   private user_displayName: String;
   private user_email: String;
 
@@ -22,7 +22,7 @@ export class AppComponent {
     this.authService.af.auth.subscribe(
       (auth) => {
         if (auth == null) {
-          console.log("Logged out");
+          console.log('Logged out');
           this.isLoggedIn = false;
           this.user_displayName = '';
           this.user_email = '';
@@ -31,7 +31,7 @@ export class AppComponent {
           this.isLoggedIn = true;
           this.user_displayName = auth.google.displayName;
           this.user_email = auth.google.email;
-          console.log("Logged in");
+          console.log('Logged in');
           console.log(auth);
           this.router.navigate(['']);
         }
