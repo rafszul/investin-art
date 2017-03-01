@@ -10,7 +10,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { HelloComponent } from './hello/hello.component';
 import { OtherComponent } from './other/other.component';
 import { ArtistsComponent } from './artists/artists.component';
-
+import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'hello', pathMatch: 'full' },
@@ -21,9 +21,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'gallery', component: GalleryComponent },
   { path: 'art', component: GalleryComponent },
-
+  { path: 'contact', component: ContactComponent },
   { path: 'other', component: OtherComponent },
-  { path: 'login', component: LoginComponent },
   { path: 'artists', component: ArtistsComponent },
 
   { path: '',  children: [] }
