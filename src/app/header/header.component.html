@@ -1,3 +1,14 @@
+<button md-icon-button [mdMenuTriggerFor]="menu">
+  <md-icon>fingerprint</md-icon>
+</button>
+<md-menu #menu="mdMenu">
+    <button md-menu-item (click)="loginGoogle()" id="google"><md-icon>check</md-icon> <span>Login</span>
+  </button>
+    <button md-menu-item (click)="logout()">
+    <md-icon>close</md-icon>
+    <span>Logout</span>
+  </button>
+</md-menu>
 <a routerLink="/" routerLinkActive="active">
     <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 11936 4450">
   <g id="invest-in-art-header-mid.svg">
