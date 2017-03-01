@@ -1,8 +1,43 @@
-<div fxLayout="row" fxLayoutAlign="center center">
-    <md-card>
+<div fxLayout="column" fxLayoutAlign="center center">
 
-        <button md-button routerLink="/artists" routerLinkActive="active">Artists</button>
+    <md-card fxFlex="50">
+        <md-card-subtitle>Subtitle first</md-card-subtitle>
+        <md-card-title>Card with title</md-card-title>
+        <md-card-content>
+            <p>This is supporting text.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+        </md-card-content>
+        <md-card-actions>
+            <button md-button routerLink="/artists" routerLinkActive="active">Artists</button>
+
+            <button md-button routerLink="/art" routerLinkActive="active">Gallery</button>
+        </md-card-actions>
     </md-card>
 
+    <md-card fxFlex="50">
+        <md-card-subtitle>The color pallette</md-card-subtitle>
+        <md-card-title>Pure, clean and specious</md-card-title>
+        <md-card-content>
+
+            <svg version="1.1" id="Level_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1024 768" enable-background="new 0 0 1024 768" xml:space="preserve">
+  <rect x="20" y="20" fill="#616161" width="246" height="200"/>
+  <rect x="266" y="20" fill="#9E9E9E" width="246" height="200"/>
+  <rect x="512" y="20" fill="#F5F5F5" width="246" height="200"/>
+  <rect x="758" y="20" fill="#212121" width="246" height="200"/>
+  <rect x="20" y="220" fill="#607D8B" width="246" height="200"/>
+  <rect x="266" y="220" fill="#212121" width="246" height="200"/>
+  <rect x="512" y="220" fill="#757575" width="246" height="200"/>
+  <rect x="758" y="220" fill="#BDBDBD" width="246" height="200"/>
+
+</svg>
+        </md-card-content>
+<p>
+        The palette was generated using Material Palette -</p>
+        <md-card-actions>
+            <button md-button routerLink="/artists" routerLinkActive="active">materialpalette.com/grey/blue-grey</button>
+
+            <button md-button routerLink="/art" routerLinkActive="active">Gallery</button>
+        </md-card-actions>
+    </md-card>
 
 </div>

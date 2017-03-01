@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFire, AuthProviders, AuthMethods } from 'angularfire2';
 import { Router } from '@angular/router';
 
 import { AuthService } from '../providers/auth.service';
@@ -10,10 +11,10 @@ import { AuthService } from '../providers/auth.service';
 })
 export class LoginComponent implements OnInit {
 
-    constructor(public authService: AuthService, private router:Router) { }
+    constructor(public authService: AuthService, private router: Router) { }
 
 
-  login() {
+  loginGoogle() {
     this.authService.loginWithGoogle().then((data) => {
       this.router.navigate(['']);
     });

@@ -1,4 +1,17 @@
 <div fxLayout="column" fxLayoutAlign="center center">
+
+    <div class="form-container">
+        <!--<img src="assets/images/lock.svg" id="lock">-->
+
+        <span class="error" *ngIf="error">{{ error }}</span>
+
+        <button md-button (click)="loginFb()" id="fb">Login With Facebook</button><br>
+        <button md-button (click)="loginGoogle()" id="google">Login With Google</button>
+        <button md-button routerLink="/login-email" id="email">Email</button>
+
+        <a routerLink="/signup" routerLinkActive="active" class="alc">No account? <strong>Create one here</strong></a>
+    </div>
+
     <h1>Login To Your Account</h1>
     <button md-button (click)="login()">Login With Google</button>
 
