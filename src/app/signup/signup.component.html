@@ -1,5 +1,29 @@
 <div fxLayout="row" fxLayoutAlign="center center">
-  <p>
-  signup works!
-</p>
+    <div class="container">
+        <form id="contact-form" #form="ngForm" (ngSubmit)="submit(form.value)" novalidate autocomplete="off">
+
+            <label for="name">name:</label>
+            <input type="text" class="form-control" id="name" placeholder="your name goes here" aria-describedby="exampleHelpText" required name="name" ngModel>
+            <p class="help-text" id="exampleHelpText">example: arthur rimbaud</p>
+
+            <label for="email">email:</label>
+            <input type="email" class="form-control" id="email" placeholder="your email address" aria-describedby="exampleHelpText" required name="email" ngModel>
+            <p class="help-text" id="exampleHelpText">example: arthur.rimbaud@seer.io</p>
+
+            <label for="msg">your message:
+    <textarea rows="4" cols="50" id="msg" placeholder="enter your message here..." name="msg" ngModel></textarea>
+    </label>
+            <p class="help-text" id="exampleHelpText">you can see you data in JSON format below</p>
+            <br>
+
+            <pre>
+    {{form.value | json}}
+</pre>
+            <label for="submit-btn">when you finished typing</label>
+            <button class="small expanded secondary hollow button" id="submit-btn" type="submit">submit your message</button>
+            <p class="help-text" id="exampleHelpText">i usually reply within two days to any profesional querries
+            </p>
+
+        </form>
+    </div>
 </div>
