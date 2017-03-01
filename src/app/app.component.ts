@@ -26,7 +26,7 @@ export class AppComponent {
           this.isLoggedIn = false;
           this.user_displayName = '';
           this.user_email = '';
-          this.router.navigate(['login']);
+          this.router.navigate(['']);
         } else {
           this.isLoggedIn = true;
           this.user_displayName = auth.google.displayName;

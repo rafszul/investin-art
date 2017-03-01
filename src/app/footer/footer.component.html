@@ -1,11 +1,9 @@
 <footer>
     <div fxLayout="row" fxLayoutAlign="center center">
-
-        <button md-button routerLink="/about" routerLinkActive="active">
-        <md-icon>
-            code
-        </md-icon></button>
-        <button md-button routerLink="/signup" routerLinkActive="active">twitter</button>
-        <button md-button routerLink="/art" routerLinkActive="active">instagram</button>
+        <button md-button (click)="loginGoogle()" id="google">Login</button>
+        <!--<button md-button (click)="login()">Login With Google</button>-->
+        <button md-button (click)="logout()">Logout</button>
+        <!--<button md-button routerLink="/signup" routerLinkActive="active">twitter</button>
+        <button md-button routerLink="/art" routerLinkActive="active">instagram</button>-->
     </div>
 </footer>

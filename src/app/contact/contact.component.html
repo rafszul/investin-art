@@ -1,11 +1,20 @@
 <div fxLayout="column" fxLayout.xs="column" fxLayoutGap="2em">
+    <md-card *ngIf="!isLoggedIn">
+        <md-card-subtitle>Subtitle first</md-card-subtitle>
+        <md-card-title>Card with title</md-card-title>
+        <md-card-actions>
+            <button md-button (click)="loginGoogle()" id="google">Login With Google</button>
+        </md-card-actions>
+    </md-card>
     <md-card>
+        <md-card-subtitle>Subtitle first</md-card-subtitle>
+        <md-card-title>Card with title</md-card-title>
         <md-input-container>
-            <input mdInput placeholder="Your name" value="">
+            <input mdInput placeholder="Your name" value="{{user_displayName}}">
         </md-input-container>
 
         <md-input-container>
-            <input mdInput placeholder="Your email" value="">
+            <input mdInput placeholder="Your email" value="{{user_email}}">
         </md-input-container>
 
         <md-input-container>
@@ -16,7 +25,8 @@
         <!--            
             type="email" mdInput placeholder="Your email" value="">
         </md-input-container>-->
-
-
+        <md-card-actions>
+            <button md-button routerLink="/artists" routerLinkActive="active">Submit</button>
+        </md-card-actions>
     </md-card>
 </div>
