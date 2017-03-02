@@ -1,6 +1,6 @@
 <div fxLayout="column" fxLayout.xs="column" fxLayoutGap="2em" fxLayoutAlign="center center">
 
-    <md-card>
+    <md-card color="primary">
         <md-card-subtitle>Get in touch with us by filling in our</md-card-subtitle>
         <md-card-title>Contact Form</md-card-title>
         <md-input-container>
@@ -20,14 +20,14 @@
             type="email" mdInput placeholder="Your email" value="">
         </md-input-container>-->
         <md-card-actions>
-            <button md-button routerLink="/artists" routerLinkActive="active">Submit</button>
+            <button color="primary" md-button routerLink="/artists" routerLinkActive="active">Submit</button>
         </md-card-actions>
     </md-card>
-    <md-card *ngIf="!isLoggedIn">
+    <md-card color="primary" *ngIf="!isLoggedIn">
         <md-card-subtitle>or</md-card-subtitle>
         <md-card-title>for extra convinience</md-card-title>
         <md-card-actions>
-            <button md-button (click)="loginGoogle()" id="google">Sign in with Google</button>
+            <button color="primary" md-button (click)="loginGoogle()" id="google">Sign in with Google</button>
         </md-card-actions>
     </md-card>
 </div>

@@ -1,26 +1,33 @@
-<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="2em">
-    <!--<span class="error" *ngIf="error">{{ error }}</span>-->
+<div fxLayout="column" fxLayout.xs="column" fxLayoutGap="2em" fxLayoutAlign="center center">
 
-    <md-card>
-        <md-card-subtitle>Hello {{user_displayName}}</md-card-subtitle>
-        <md-card-title>Card with title</md-card-title>
+    <md-card color="primary">
+        <md-card-subtitle>Get in touch with us by filling in our</md-card-subtitle>
+        <md-card-title>Contact Form</md-card-title>
+        <md-input-container>
+            <input mdInput placeholder="Your name" value="{{user_displayName}}">
+        </md-input-container>
 
-        <md-card-content>
-            <p *ngIf="isLoggedIn">You are logged in as {{user_displayName}} and your email is: ({{user_email}})
-                <p>
-        </md-card-content>
+        <md-input-container>
+            <input mdInput placeholder="Your email" value="{{user_email}}">
+        </md-input-container>
+
+        <md-input-container>
+            <textarea mdInput placeholder="" value="Your message">
+              
+            </textarea>
+        </md-input-container>
+        <!--            
+            type="email" mdInput placeholder="Your email" value="">
+        </md-input-container>-->
         <md-card-actions>
-            <!--<img src="assets/images/lock.svg" id="lock">-->
-
-
-
-            <!--<button md-button (click)="loginFb()" id="fb">Login With Facebook</button><br>-->
-            <button md-button (click)="loginGoogle()" id="google">Login With Google</button>
-            <!--<button md-button routerLink="/login-email" id="email">Email</button>-->
-
-            <!--<a routerLink="/signup" routerLinkActive="active" class="alc">No account? <strong>Create one here</strong></a>-->
-
+            <button md-button routerLink="/artists" routerLinkActive="active">Submit</button>
         </md-card-actions>
     </md-card>
-
+    <md-card *ngIf="!isLoggedIn">
+        <md-card-subtitle>or</md-card-subtitle>
+        <md-card-title>for extra convinience</md-card-title>
+        <md-card-actions>
+            <button md-button (click)="loginGoogle()" id="google">Sign in with Google</button>
+        </md-card-actions>
+    </md-card>
 </div>

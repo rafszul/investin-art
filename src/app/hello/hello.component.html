@@ -1,10 +1,10 @@
 <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="2em">
 
 
-    <md-card>
-        <md-card-subtitle *ngIf="isLoggedIn">Hello {{user_displayName}}</md-card-subtitle>
-        <md-card-title>Card with title</md-card-title>
-        <img md-card-image src="https://source.unsplash.com/random/600x400">
+    <md-card color="primary">
+        <md-card-subtitle>Hello</md-card-subtitle>
+        <md-card-title color="primary" *ngIf="isLoggedIn">{{user_displayName}}</md-card-title>
+        <img md-card-image src="https://source.unsplash.com/random/600x300">
         <md-card-content>
 
             <p>
@@ -13,31 +13,29 @@
             </p>
         </md-card-content>
         <md-card-actions>
-            <button md-button routerLink="/contact" routerLinkActive="active">Contact us</button>
-            <button md-button routerLink="/about" routerLinkActive="active">Read more about us</button>
-            <button md-button routerLink="/art" routerLinkActive="active">See our collecvtion</button>
+            <button color="primary" md-button routerLink="/contact" routerLinkActive="active">Contact us</button>
+            <button color="primary" md-button routerLink="/about" routerLinkActive="active">Read more about us</button>
+            <button color="primary" md-button routerLink="/art" routerLinkActive="active">See our collecvtion</button>
 
 
         </md-card-actions>
     </md-card>
-    <md-card>
+    <md-card color="primary">
         <md-card-header>
-            <img md-card-avatar src="https://source.unsplash.com/random/200x200">
             <md-card-title>Cards are the best</md-card-title>
             <md-card-subtitle>Really, they are!</md-card-subtitle>
         </md-card-header>
-        <img md-card-image src="https://source.unsplash.com/random/800x600">
+        <img md-card-image src="https://source.unsplash.com/random/600x300">
         <md-card-content>
             <p>Something pretty...</p>
         </md-card-content>
     </md-card>
-    <md-card>
+    <md-card color="primary">
         <md-card-header>
-            <img md-card-avatar src="https://source.unsplash.com/random/200x200">
             <md-card-title>Cards are the best</md-card-title>
             <md-card-subtitle>Really, they are!</md-card-subtitle>
         </md-card-header>
-        <img md-card-image src="https://source.unsplash.com/random/800x600">
+        <img md-card-image src="https://source.unsplash.com/random/600x300">
         <md-card-content>
             <p>Something pretty...</p>
         </md-card-content>
