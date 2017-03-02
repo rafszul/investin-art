@@ -1,5 +1,18 @@
 @import '../../styles.scss';
 .example-header-image {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8e/PP_D081_poster_by_grasset_for_french_decorative_artists_at_the_grafton_gallery_in_1893.jpg');
+    background-image: url('https://source.unsplash.com/random/200x200');
     background-size: cover;
+}
+
+md-card {
+    font-family: 'Raleway', sans-serif;
+    max-width: 80%;
+    margin: 2em;
+    text-align: right;
+}
+
+md-card-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }

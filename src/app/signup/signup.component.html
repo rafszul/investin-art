@@ -1,29 +1,26 @@
-<div fxLayout="row" fxLayoutAlign="center center">
-    <div class="container">
-        <form id="contact-form" #form="ngForm" (ngSubmit)="submit(form.value)" novalidate autocomplete="off">
+<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="2em">
+    <!--<span class="error" *ngIf="error">{{ error }}</span>-->
 
-            <label for="name">name:</label>
-            <input type="text" class="form-control" id="name" placeholder="your name goes here" aria-describedby="exampleHelpText" required name="name" ngModel>
-            <p class="help-text" id="exampleHelpText">example: arthur rimbaud</p>
+    <md-card>
+        <md-card-subtitle>Hello {{user_displayName}}</md-card-subtitle>
+        <md-card-title>Card with title</md-card-title>
 
-            <label for="email">email:</label>
-            <input type="email" class="form-control" id="email" placeholder="your email address" aria-describedby="exampleHelpText" required name="email" ngModel>
-            <p class="help-text" id="exampleHelpText">example: arthur.rimbaud@seer.io</p>
+        <md-card-content>
+            <p *ngIf="isLoggedIn">You are logged in as {{user_displayName}} and your email is: ({{user_email}})
+                <p>
+        </md-card-content>
+        <md-card-actions>
+            <!--<img src="assets/images/lock.svg" id="lock">-->
 
-            <label for="msg">your message:
-    <textarea rows="4" cols="50" id="msg" placeholder="enter your message here..." name="msg" ngModel></textarea>
-    </label>
-            <p class="help-text" id="exampleHelpText">you can see you data in JSON format below</p>
-            <br>
 
-            <pre>
-    {{form.value | json}}
-</pre>
-            <label for="submit-btn">when you finished typing</label>
-            <button class="small expanded secondary hollow button" id="submit-btn" type="submit">submit your message</button>
-            <p class="help-text" id="exampleHelpText">i usually reply within two days to any profesional querries
-            </p>
 
-        </form>
-    </div>
+            <!--<button md-button (click)="loginFb()" id="fb">Login With Facebook</button><br>-->
+            <button md-button (click)="loginGoogle()" id="google">Login With Google</button>
+            <!--<button md-button routerLink="/login-email" id="email">Email</button>-->
+
+            <!--<a routerLink="/signup" routerLinkActive="active" class="alc">No account? <strong>Create one here</strong></a>-->
+
+        </md-card-actions>
+    </md-card>
+
 </div>

@@ -1,13 +1,7 @@
-<div fxLayout="column" fxLayout.xs="column" fxLayoutGap="2em">
-    <md-card *ngIf="!isLoggedIn">
-        <md-card-subtitle>For extra features,</md-card-subtitle>
-        <md-card-title>Authenticate with Google</md-card-title>
-        <md-card-actions>
-            <button md-button (click)="loginGoogle()" id="google">Login With Google</button>
-        </md-card-actions>
-    </md-card>
+<div fxLayout="column" fxLayout.xs="column" fxLayoutGap="2em" fxLayoutAlign="center center">
+
     <md-card>
-        <md-card-subtitle>Or fill in the usual contact form</md-card-subtitle>
+        <md-card-subtitle>Get in touch with us by filling in our</md-card-subtitle>
         <md-card-title>Contact Form</md-card-title>
         <md-input-container>
             <input mdInput placeholder="Your name" value="{{user_displayName}}">
@@ -18,7 +12,7 @@
         </md-input-container>
 
         <md-input-container>
-            <textarea mdInput placeholder="Your message" value="Your message">
+            <textarea mdInput placeholder="" value="Your message">
               
             </textarea>
         </md-input-container>
@@ -27,6 +21,13 @@
         </md-input-container>-->
         <md-card-actions>
             <button md-button routerLink="/artists" routerLinkActive="active">Submit</button>
+        </md-card-actions>
+    </md-card>
+    <md-card *ngIf="!isLoggedIn">
+        <md-card-subtitle>or</md-card-subtitle>
+        <md-card-title>for extra convinience</md-card-title>
+        <md-card-actions>
+            <button md-button (click)="loginGoogle()" id="google">Sign in with Google</button>
         </md-card-actions>
     </md-card>
 </div>
