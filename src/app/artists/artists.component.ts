@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFire, AuthProviders, AuthMethods, FirebaseListObservable } from 'angularfire2';
 
 @Component({
   selector: 'investin-art-artists',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArtistsComponent implements OnInit {
 
-  constructor() { }
+  artists: FirebaseListObservable<any[]>;
+
+  constructor(af: AngularFire) {
+    this.artists = af.database.list('/artists');
+  }
 
   ngOnInit() {
   }

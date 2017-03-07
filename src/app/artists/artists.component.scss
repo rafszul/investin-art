@@ -1,5 +1,5 @@
 @import '../../styles.scss';
 .example-header-image {
     background-image: url('https://source.unsplash.com/random/200x200');
-    background-size: contain;
+    background-size: cover;
 }

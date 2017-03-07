@@ -1,48 +1,89 @@
 <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="2em">
-    <md-card color="primary">
-        <md-card-header>
-            <div md-card-avatar class="example-header-image"></div>
-            <md-card-title>Shiba Inu</md-card-title>
-            <md-card-subtitle>Dog Breed</md-card-subtitle>
-        </md-card-header>
-<img md-card-image src="https://source.unsplash.com/random/600x300">
+  <md-card color="primary">
+    <md-card-title>Artists represented by investin.art:</md-card-title>
+    <!--<img md-list-avatar src="{{ artist.img-small }}" alt="{{ artist.name }}">-->
+
+    <!--<md-list-item *ngFor="let artist of artists | async ">
+      <img md-list-avatar src="./../../assets/avatars/yu-sq-100x100.jpg" alt="{{ artist.name }}">
+      <h3 md-line> {{ artist.name }} </h3>
+      <p md-line><span>
+        {{ artist.about-short }}</span></p>
+    </md-list-item>-->
+
+    <md-card *ngFor="let artist of artists | async ">
+      <md-card-title-group>
+        <img md-card-md-image src="./../../assets/avatars/yu-sq-100x100.jpg">
+        <md-card-title>
+          <h4> {{ artist.name }} </h4>
+        </md-card-title>
+        <md-card-subtitle> {{ artist.profession }} </md-card-subtitle>
         <md-card-content>
-            <p>
-                The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan. A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally bred for hunting.
-            </p>
+          <span> My work represents my journey as an artist and human being. This journey is always about physical, mental and spiritual change. As I cross through space and time... </span>
         </md-card-content>
-        <md-card-actions>
-            <button md-button>LIKE</button>
-            <button md-button>SHARE</button>
-        </md-card-actions>
+      </md-card-title-group>
+      <!--<img md-card-image src="./../../assets/avatars/yu-sq.jpg" alt="{{ artist.name }}">-->
+      <!--<md-card-content>
+        <p>
+          {{ artist.about }}
+        </p>
+      </md-card-content>
+      <md-card-actions>
+        <button md-button>Gallery</button>
+      </md-card-actions>-->
     </md-card>
+    <!--<md-card-header>
+      <div md-card-avatar class="example-header-image"></div>
+      <md-card-title>Shiba Inu</md-card-title>
+      <md-card-subtitle>Dog Breed</md-card-subtitle>
+    </md-card-header>
+    <md-card-content>
+      <md-list>
+        <md-list-item *ngFor="let message of messages">
+          <img md-list-avatar src="https://source.unsplash.com/random/50x50" alt="...">
+          <h3 md-line>Yuliya V Krylova</h3>
+          <p md-line>
+            <span> My work represents my journey as an artist and human being. This journey is always about physical, mental and spiritual change. As I cross through space and time... </span></p>
+        </md-list-item>
+      </md-list>
 
-    <md-card color="primary">
-        <md-card-title-group>
-
-            <md-card-title>Card with title</md-card-title>
-            <md-card-subtitle>Subtitle</md-card-subtitle>
-        </md-card-title-group>
-    </md-card>
-
-    <md-list fxFlexAlign="center ">
-        <md-list-item> Pepper </md-list-item>
-        <md-list-item> Salt </md-list-item>
-        <md-list-item> Paprika </md-list-item>
-    </md-list>
 
 
+    </md-card-content>
+    <md-card-actions>
+      <button md-button>LIKE</button>
+      <button md-button>SHARE</button>
+    </md-card-actions>-->
+  </md-card>
 
-    <md-list>
-        <md-list-item> Pepper </md-list-item>
-        <md-list-item> Salt </md-list-item>
-        <md-list-item> Paprika </md-list-item>
-    </md-list>
+  <!--<img md-card-image src="https://source.unsplash.com/random/600x300">-->
 
-    <md-list>
 
-        <!--this is for chat/contact component -->
-        <!--<md-list-item *ngFor="let message of messages ">
+  <!--<md-card color="primary">
+    <md-card-title-group>
+
+      <md-card-title>Card with title</md-card-title>
+      <md-card-subtitle>Subtitle</md-card-subtitle>
+    </md-card-title-group>
+  </md-card>-->
+
+  <!--<md-list fxFlexAlign="center ">
+    <md-list-item> Pepper </md-list-item>
+    <md-list-item> Salt </md-list-item>
+    <md-list-item> Paprika </md-list-item>
+  </md-list>-->
+
+
+
+  <!--<md-list>
+    <md-list-item> Pepper </md-list-item>
+    <md-list-item> Salt </md-list-item>
+    <md-list-item> Paprika </md-list-item>
+  </md-list>-->
+
+
+
+  <!--this is for chat/contact component -->
+  <!--<md-list-item *ngFor="let message of messages ">
             <img md-list-avatar src="... " alt="... ">
             <h3 md-line> {{message.from}} </h3>
             <p md-line>
@@ -50,5 +91,5 @@
                 <span class="demo-2 "> -- {{message.message}} </span>
             </p>
         </md-list-item>-->
-    </md-list>
+
 </div>
