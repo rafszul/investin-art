@@ -3,13 +3,21 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+// configuration:
+
+import { firebaseConfig } from '../app/config/firebase.config';
+
+
+// modules:
+
 import { MaterialModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import 'hammerjs';
 import { AngularFireModule } from 'angularfire2';
-import { firebaseConfig } from '../app/config/firebase.config';
-
 import { AppRoutingModule } from './app-routing.module';
+
+// components:
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { EmailComponent } from './email/email.component';
@@ -22,9 +30,14 @@ import { HelloComponent } from './hello/hello.component';
 import { OtherComponent } from './other/other.component';
 import { ArtistsComponent } from './artists/artists.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { AuthService } from './providers/auth.service';
 import { ContactComponent } from './contact/contact.component';
 import { ThankYouDialogComponent } from './thank-you-dialog/thank-you-dialog.component';
+
+// services:
+
+import { AuthService } from './providers/auth.service';
+import { ImageService } from './providers/images.service';
+import { AF } from './providers/af';
 
 @NgModule({
   declarations: [
@@ -41,7 +54,8 @@ import { ThankYouDialogComponent } from './thank-you-dialog/thank-you-dialog.com
     ArtistsComponent,
     NavbarComponent,
     ContactComponent,
-    ThankYouDialogComponent
+    ThankYouDialogComponent,
+    ImageService
   ],
   imports: [
     BrowserModule,
@@ -50,8 +64,8 @@ import { ThankYouDialogComponent } from './thank-you-dialog/thank-you-dialog.com
     AppRoutingModule,
     MaterialModule.forRoot(),
     FlexLayoutModule,
-    AngularFireModule.initializeApp(firebaseConfig)  ],
-  providers: [AuthService],
+    AngularFireModule.initializeApp(firebaseConfig)],
+  providers: [AuthService, ImageService, AF],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
