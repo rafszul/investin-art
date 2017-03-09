@@ -3,10 +3,14 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|Ravi+Prakash');
 @import 'investin-art-custom-theme.scss';
 body {
+    padding: 0.5em;
     font-family: 'Raleway', sans-serif;
     font-family: 'Ravi Prakash', cursive;
     color: #212121;
-    margin: 0.5em;
+}
+
+.app {
+    height: 100vh;
 }
 
 header {
@@ -51,6 +55,7 @@ md-card-content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    text-align: right;
 }
 
 md-card-actions {
@@ -63,18 +68,21 @@ md-card-title {
     font-family: 'Ravi Prakash', cursive;
     text-transform: uppercase;
     color: #455A64;
+    text-align: right;
 }
 
 md-button {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     color: #455A64;
+    text-align: center;
 }
 
 button {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     color: #455A64;
+    text-align: center;
 }
 
 // md-card {

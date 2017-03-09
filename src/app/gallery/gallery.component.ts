@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { MdDialog, MdDialogConfig, MdDialogRef } from '@angular/material';
 
 @Component({
   selector: 'investin-art-gallery',
@@ -7,23 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
-  // tiles: any[] = [
-  //   {img: 'url(https://static.pexels.com/photos/169617/pexels-photo-169617.jpeg)', text: 'One', cols: 3, rows: 1, color: 'lightblue'},
-  //   {img: 'url(./../../../assets/invest-in-art-header-mid-cleaned.svg)', text: 'Two', cols: 1, rows: 2, color: 'lightgreen'},
-  //   {img: 'url(./../../../assets/invest-in-art-header-mid-cleaned.svg)', text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
-  //   {img: 'url(./../../../assets/invest-in-art-header-mid-cleaned.svg)', text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
+  // tiles = [
+  //   { text: 'One', cols: 3, rows: 1, color: 'lightblue' },
+  //   { text: 'Two', cols: 1, rows: 2, color: 'lightgreen' },
+  //   { text: 'Three', cols: 1, rows: 1, color: 'lightpink' },
+  //   { text: 'Four', cols: 2, rows: 1, color: '#DDBDF1' },
   // ];
 
-  tiles = [
-    {text: 'One', cols: 3, rows: 1, color: 'lightblue'},
-    {text: 'Two', cols: 1, rows: 2, color: 'lightgreen'},
-    {text: 'Three', cols: 1, rows: 1, color: 'lightpink'},
-    {text: 'Four', cols: 2, rows: 1, color: '#DDBDF1'},
-  ];
+  images: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(af: AngularFire,
+    private vcr: ViewContainerRef,
+    private mdDialog: MdDialog) {
+
+    this.images = af.database.list('/images');
+
+  }
 
   ngOnInit() {
+
   }
+
 
 }
