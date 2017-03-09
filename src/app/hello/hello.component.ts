@@ -13,22 +13,6 @@ export class HelloComponent implements OnInit {
 
   constructor(public authService: AuthService) {
     this.authService.af.auth.subscribe(
-      (auth) => {
-        if (auth == null) {
-          console.log('Logged out');
-          this.isLoggedIn = false;
-          this.user_displayName = '';
-          this.user_email = '';
-
-        } else {
-          this.isLoggedIn = true;
-          this.user_displayName = auth.google.displayName;
-          this.user_email = auth.google.email;
-          console.log('Logged in');
-          console.log(auth);
-
-        }
-      }
     );
   }
   ngOnInit() {

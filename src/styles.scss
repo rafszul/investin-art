@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway|Ravi+Prakash');
 @import 'investin-art-custom-theme.scss';
 body {
-    padding: 0.5em;
+    padding: 0;
     font-family: 'Raleway', sans-serif;
     font-family: 'Ravi Prakash', cursive;
     color: #212121;
@@ -52,9 +52,6 @@ md-card {
 }
 
 md-card-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     text-align: right;
 }
 

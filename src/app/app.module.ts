@@ -36,7 +36,6 @@ import { ThankYouDialogComponent } from './thank-you-dialog/thank-you-dialog.com
 // services:
 
 import { AuthService } from './providers/auth.service';
-import { ImageService } from './providers/images.service';
 import { AF } from './providers/af';
 
 @NgModule({
@@ -55,7 +54,6 @@ import { AF } from './providers/af';
     NavbarComponent,
     ContactComponent,
     ThankYouDialogComponent,
-    ImageService
   ],
   imports: [
     BrowserModule,
@@ -65,7 +63,7 @@ import { AF } from './providers/af';
     MaterialModule.forRoot(),
     FlexLayoutModule,
     AngularFireModule.initializeApp(firebaseConfig)],
-  providers: [AuthService, ImageService, AF],
+  providers: [AuthService, AF],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

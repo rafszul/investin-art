@@ -1,6 +1,44 @@
 <div fxLayout="column" fxLayout.xs="column" fxLayoutGap="2em" fxLayoutAlign="center center">
 
-    <md-card color="primary">
+
+
+  <md-card color="primary">
+    <md-card-subtitle>Hello</md-card-subtitle>
+    <md-card-title color="primary" *ngIf="isLoggedIn">{{user_displayName}}</md-card-title>
+    <img md-card-image src="./../../assets/optimized/images-width-800/0009-Reincarnation-1.jpg">
+    <md-card-content>
+
+      <p>
+        Thank you for your interest. Please get in touch with us by sending us a short message below.
+      </p>
+      <md-input-container>
+        <input mdInput placeholder="Your name" value="{{user_displayName}}">
+      </md-input-container>
+
+      <md-input-container>
+        <input mdInput placeholder="Your email" value="{{user_email}}">
+      </md-input-container>
+
+      <md-input-container>
+        <textarea mdInput placeholder="" value="Your message">
+              
+            </textarea>
+      </md-input-container>
+    </md-card-content>
+    <md-card-actions>
+      <button color="primary" md-button routerLink="/artists" routerLinkActive="active">Submit</button>
+
+
+    </md-card-actions>
+  </md-card>
+  <md-card color="primary" *ngIf="!isLoggedIn">
+    <md-card-subtitle>or make it a bit easier for yourself and:</md-card-subtitle>
+    <md-card-actions>
+      <button color="primary" md-button (click)="loginGoogle()" id="google">Sign in with Google</button>
+    </md-card-actions>
+  </md-card>
+
+  <!--<md-card color="primary">
         <md-card-subtitle>Get in touch with us by filling in our</md-card-subtitle>
         <md-card-title>Contact Form</md-card-title>
         <md-input-container>
@@ -15,19 +53,19 @@
             <textarea mdInput placeholder="" value="Your message">
               
             </textarea>
-        </md-input-container>
-        <!--            
+        </md-input-container>-->
+  <!--            
             type="email" mdInput placeholder="Your email" value="">
         </md-input-container>-->
-        <md-card-actions>
+  <!--<md-card-actions>
             <button color="primary" md-button routerLink="/artists" routerLinkActive="active">Submit</button>
         </md-card-actions>
-    </md-card>
-    <md-card color="primary" *ngIf="!isLoggedIn">
+    </md-card>-->
+  <!--<md-card color="primary" *ngIf="!isLoggedIn">
         <md-card-subtitle>or</md-card-subtitle>
         <md-card-title>for extra convinience</md-card-title>
         <md-card-actions>
             <button color="primary" md-button (click)="loginGoogle()" id="google">Sign in with Google</button>
         </md-card-actions>
-    </md-card>
+    </md-card>-->
 </div>

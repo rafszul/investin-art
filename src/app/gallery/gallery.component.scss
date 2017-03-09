@@ -1,1 +1,37 @@
 @import '../../styles.scss';
+.gallery-container {
+    margin: 6em;
+}
+
+// md-grid-list {
+//     margin: 6em;
+//     margin-bottom: 1em;
+// }
+md-grid-tile-footer {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    text-align: right;
+}
+
+md-icon {
+    color: #fff;
+}
+
+span {
+    color: #fff;
+}
+
+.mat-grid-tile .mat-grid-tile-footer,
+.mat-grid-tile .mat-grid-tile-header {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    color: #fff;
+    background: rgba(69, 90, 100, .6);
+    overflow: hidden;
+    padding: 0 16px;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    right: 0
+}

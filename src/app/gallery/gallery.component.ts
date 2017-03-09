@@ -1,6 +1,9 @@
 import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { MdDialog, MdDialogConfig, MdDialogRef } from '@angular/material';
+import { Router } from '@angular/router';
+import { AuthService } from '../providers/auth.service';
+
 
 @Component({
   selector: 'investin-art-gallery',
@@ -24,11 +27,19 @@ export class GalleryComponent implements OnInit {
 
     this.images = af.database.list('/images');
 
+
   }
 
   ngOnInit() {
-
   }
 
+
+}
+
+@Component({
+  selector: 'add-message',
+  template: `<p>empty component muahaha</p>`
+})
+export class AddMessageComponent {
 
 }

@@ -1,51 +1,15 @@
-<md-card *ngFor="let item of items | async">
+<div class="gallery-container">
 
-    <md-card-title>{{ item.title }}</md-card-title>
-    <md-card-subtitle>Subtitle first</md-card-subtitle>
-    <md-card-content>
-        <p>This is supporting text.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
-    </md-card-content>
-    <md-card-header>
-        <md-card-title>
-            <h5>{{ item.name }}</h5>
-        </md-card-title>
-        <img md-card-avatar src="{{ item.img }}">
-    </md-card-header>
-    <img md-card-image src="{{ item.img }}">
-    <md-card-content>
-        <h5><small>{{ item.phone }}</small></h5>
-        <p>email: {{ item.email }}</p>
-    </md-card-content>
-
-    <md-card-actions>
-        <button md-button><md-icon>chat</md-icon> Chat with {{ item.name }}</button>
-        <button md-button><md-icon>share</md-icon> Send {{ item.name }} a refferal</button>
-    </md-card-actions>
-</md-card>
-
-<!--<md-grid-list cols="2">
-    <md-grid-tile>1</md-grid-tile>
-    <md-grid-tile>2</md-grid-tile>
-    <md-grid-tile>3</md-grid-tile>
-    <md-grid-tile>4</md-grid-tile>
-</md-grid-list>-->
-
-<!--<md-grid-list cols="4" gutterSize="1em" rowHeight="250px">
-    <md-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows" [style.background-image]="title.img">
-        {{tile.text}}
+  <md-grid-list cols="2" gutterSize="8em">
+    <md-grid-tile *ngFor="let image of images | async">
+      <img src="assets/optimized/images-square/{{ image.imgname }}.jpg" alt="{{ image.title }}">
+      <md-grid-tile-footer>
+        <h3 md-line>{{ image.title }}, {{ image.year }}</h3>
+        <span md-line>{{ image.name }}</span>
+        <button md-icon-button (click)="showDetails(image);sidenav.open()">
+                <md-icon>info</md-icon>
+            </button>
+      </md-grid-tile-footer>
     </md-grid-tile>
-</md-grid-list>-->
-<md-card color="primary">
-    <md-grid-list cols="4" gutterSize="1em" rowHeight="300px">
-        <md-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows" [style.background]="tile.color">
-            {{tile.text}}
-        </md-grid-tile>
-    </md-grid-list>
-
-</md-card>
-
-
-<!--<md-grid-list cols="3" gutterSize="4px">
-    <md-grid-tile *ngFor="let speaker of speakers" [style.background-image]="'url(assets/' + speaker.src + ')'" (click)="showBio(speaker.id)"></md-grid-tile>
-</md-grid-list>-->
+  </md-grid-list>
+</div>
