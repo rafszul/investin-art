@@ -50,16 +50,16 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
   }
 
-  addMessage() {
-    // Open dialog to add add message
-    // 1. create dialog config
-    const dialogConfig = new MdDialogConfig();
-    dialogConfig.viewContainerRef = this.vcr;
-    // 2. open dialog
-    const dialog = this.mdDialog.open(AddMessageComponent, dialogConfig);
-    // 3. pass selected model to dialog
-    // (<any>dialog.componentInstance).selectedImage = this.selectedImage;
-  }
+  // addMessage() {
+  //   // Open dialog to add add message
+  //   // 1. create dialog config
+  //   const dialogConfig = new MdDialogConfig();
+  //   dialogConfig.viewContainerRef = this.vcr;
+  //   // 2. open dialog
+  //   const dialog = this.mdDialog.open(AddMessageComponent, dialogConfig);
+  //   // 3. pass selected model to dialog
+  //   // (<any>dialog.componentInstance).selectedImage = this.selectedImage;
+  // }
 }
 
 // @Component({
