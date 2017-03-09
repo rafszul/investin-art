@@ -36,10 +36,10 @@ export class GalleryComponent implements OnInit {
 
 }
 
-@Component({
-  selector: 'add-message',
-  template: `<p>empty component muahaha</p>`
-})
-export class AddMessageComponent {
+// @Component({
+//   selector: 'add-message',
+//   template: `<p>empty component muahaha</p>`
+// })
+// export class AddMessageComponent {
 
-}
+// }
