@@ -1,11 +1,24 @@
 <div class="gallery-container">
 
-  <md-grid-list cols="2" gutterSize="8em">
+  <!--<md-card color="primary" *ngFor="let image of images | async">
+    <img src="assets/optimized/images-square/{{ image.imgname }}.jpg" alt="{{ image.title }}">
+    <md-card-content>
+      <h3 md-line>{{ image.title }}, {{ image.year }}</h3>
+      <span md-line>{{ image.name }}</span>
+    </md-card-content>
+    <md-card-actions>
+      <button md-icon-button (click)="showDetails(image);sidenav.open()">
+                <md-icon>info</md-icon>
+            </button>
+    </md-card-actions>
+  </md-card>-->
+
+  <md-grid-list cols="6" gutterSize="1em">
     <md-grid-tile *ngFor="let image of images | async">
       <img src="assets/optimized/images-square/{{ image.imgname }}.jpg" alt="{{ image.title }}">
       <md-grid-tile-footer>
-        <h3 md-line>{{ image.title }}, {{ image.year }}</h3>
-        <span md-line>{{ image.name }}</span>
+        <!--<h3 md-line>{{ image.title }}, {{ image.year }}</h3>
+        <span md-line>{{ image.name }}</span>-->
         <button md-icon-button (click)="showDetails(image);sidenav.open()">
                 <md-icon>info</md-icon>
             </button>
