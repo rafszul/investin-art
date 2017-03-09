@@ -62,29 +62,29 @@ export class ContactComponent implements OnInit {
   }
 }
 
-@Component({
-  selector: 'add-message',
-  template: `
-  <form (submit)="addMessage()">
-    <md-input-container>
-      <input mdInput name="message" [(ngModel)]="message" placeholder="Message">
-    </md-input-container>
-    <button md-raised-button color="accent">Add Message</button>
-  </form>
-  `
-})
-export class AddMessageComponent {
-  message = '';
+// @Component({
+//   selector: 'add-message',
+//   template: `
+//   <form (submit)="addMessage()">
+//     <md-input-container>
+//       <input mdInput name="message" [(ngModel)]="message" placeholder="Message">
+//     </md-input-container>
+//     <button md-raised-button color="accent">Add Message</button>
+//   </form>
+//   `
+// })
+// export class AddMessageComponent {
+//   message = '';
 
-  constructor(private mdDialogRef: MdDialogRef<AddMessageComponent>) { }
+//   constructor(private mdDialogRef: MdDialogRef<AddMessageComponent>) { }
 
-  addMessage() {
-    // 1. create message
-    const newMessage = { who: 'John Doe', content: this.message };
-    // 2. add message to selected model
-    // const selectedModel : Image = (<any>this.mdDialogRef.componentInstance).selectedModel;
-    // selectedModel.messages.push(newMessage);
-    // 3. close dialog
-    this.mdDialogRef.close();
-  }
-}
+//   addMessage() {
+//     // 1. create message
+//     const newMessage = { who: 'John Doe', content: this.message };
+//     // 2. add message to selected model
+//     // const selectedModel : Image = (<any>this.mdDialogRef.componentInstance).selectedModel;
+//     // selectedModel.messages.push(newMessage);
+//     // 3. close dialog
+//     this.mdDialogRef.close();
+//   }
+// }
