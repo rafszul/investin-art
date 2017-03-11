@@ -37,6 +37,7 @@ import { ThankYouDialogComponent } from './thank-you-dialog/thank-you-dialog.com
 
 import { AuthService } from './providers/auth.service';
 import { AF } from './providers/af';
+import { ImgDetailsComponent } from './img-details/img-details.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +55,7 @@ import { AF } from './providers/af';
     NavbarComponent,
     ContactComponent,
     ThankYouDialogComponent,
+    ImgDetailsComponent,
   ],
   imports: [
     BrowserModule,
