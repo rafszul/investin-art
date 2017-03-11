@@ -24,6 +24,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'other', component: OtherComponent },
   { path: 'artists', component: ArtistsComponent },
+  { path: '**', component: OtherComponent },
 
   { path: '',  children: [] }
 ];
