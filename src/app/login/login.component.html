@@ -1,26 +1,46 @@
 <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="2em">
     <!--<span class="error" *ngIf="error">{{ error }}</span>-->
 
-    <md-card color="primary">
-        <md-card-subtitle>Hello {{user_displayName}}</md-card-subtitle>
-        <md-card-title>Card with title</md-card-title>
+    <!--<md-card color="primary">
+                <md-card-subtitle>Hello please log in to your investin.art account</md-card-subtitle>-->
+    <md-card color="primary" *ngIf="isLoggedIn">
+        <p>You are currently logged in as:</p>
+        <h3>{{user_displayName}}</h3>
+        <img md-card-image src="./../../assets/optimized/images-width-800/0009-Reincarnation-1.jpg">
+        <p><small>You may log out below or by using the menu at the top left corner</small></p>
 
-        <md-card-content>
-            <p *ngIf="isLoggedIn">You are logged in as {{user_displayName}} and your email is: ({{user_email}})
-                <p>
-        </md-card-content>
-        <md-card-actions>
-            <!--<img src="assets/images/lock.svg" id="lock">-->
-
-
-
-            <!--<button md-button (click)="loginFb()" id="fb">Login With Facebook</button><br>-->
-            <button color="primary" md-button (click)="loginGoogle()" id="google">Login With Google</button>
-            <!--<button md-button routerLink="/login-email" id="email">Email</button>-->
-
-            <!--<a routerLink="/signup" routerLinkActive="active" class="alc">No account? <strong>Create one here</strong></a>-->
-
-        </md-card-actions>
+        <button color="primary" md-button (click)="logout()">
+    <span>Logout</span>
+  </button>
     </md-card>
+
+    <!--<md-card-content>
+            <md-card color="primary" *ngIf="isLoggedIn">
+                <p>You are currently logged in as:</p>
+                <h3>{{user_displayName}}</h3>
+                <p><small>Log out below or by using the menu icon at the top left corner</small></p>
+                <button color="primary" md-button (click)="logout()">
+    <span>Logout</span>
+  </button>
+            </md-card>-->
+    <md-card color="primary" *ngIf="!isLoggedIn">
+        <md-card-subtitle>You may use your Google account to authorize your investin.art profile</md-card-subtitle>
+
+        <button color="primary" md-button (click)="loginGoogle()" id="google">Log in with your Google account here</button>
+    </md-card>
+    <!--</md-card-content>-->
+    <!--<md-card-actions>-->
+    <!--<img src="assets/images/lock.svg" id="lock">-->
+    <md-card color="primary">
+        <button color="primary" md-button routerLink="/contact" routerLinkActive="active">Alternatively you can contact us here</button>
+    </md-card>
+
+
+
+    <!--<button md-button (click)="loginFb()" id="fb">Login With Facebook</button><br>-->
+
+
+    <!--</md-card-actions>
+    </md-card>-->
 
 </div>
