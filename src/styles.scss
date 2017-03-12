@@ -41,6 +41,7 @@ span {
 
 md-input-container {
     width: 100%;
+    text-align: right;
 }
 
 md-card {
@@ -52,6 +53,7 @@ md-card {
 }
 
 md-card-content {
+    justify-content: center;
     text-align: right;
 }
 

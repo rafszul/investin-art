@@ -2,43 +2,66 @@
 
 
 
-  <md-card color="primary">
-    <md-card-subtitle>Hello</md-card-subtitle>
-    <md-card-title color="primary" *ngIf="isLoggedIn">{{user_displayName}}</md-card-title>
-    <img md-card-image src="./../../assets/optimized/images-width-800/0009-Reincarnation-1.jpg">
-    <md-card-content>
-
-      <p>
-        Thank you for your interest. Please get in touch with us by sending us a short message below.
-      </p>
-      <md-input-container>
-        <input mdInput placeholder="Your name" value="{{user_displayName}}">
-      </md-input-container>
-
-      <md-input-container>
-        <input mdInput placeholder="Your email" value="{{user_email}}">
-      </md-input-container>
-
-      <md-input-container>
-        <textarea mdInput placeholder="" value="Your message">
-              
-            </textarea>
-      </md-input-container>
-    </md-card-content>
-    <md-card-actions>
-      <button color="primary" md-button routerLink="/artists" routerLinkActive="active">Submit</button>
+    <md-card color="primary">
+        <md-card-subtitle>
+            <h3>Hello and thank you for your interest</h3>
+            <p>Please get in touch with us by sending us a short message below.</p>
+        </md-card-subtitle>
+        <md-card-title color="primary">
+            <!--<h3><small>
+                    Please get in touch with us by sending us a short message below.</small>
+            </h3>-->
+        </md-card-title>
+        <img md-card-image src="./../../assets/optimized/images-width-800/0009-Reincarnation-1.jpg">
+        <md-card-content>
 
 
-    </md-card-actions>
-  </md-card>
-  <md-card color="primary" *ngIf="!isLoggedIn">
-    <md-card-subtitle>or make it a bit easier for yourself and:</md-card-subtitle>
-    <md-card-actions>
-      <button color="primary" md-button (click)="loginGoogle()" id="google">Sign in with Google</button>
-    </md-card-actions>
-  </md-card>
 
-  <!--<md-card color="primary">
+            <md-card color="primary" *ngIf="isLoggedIn">
+                <p>You are currently logged in as:</p>
+                <h3 *ngIf="isLoggedIn">{{user_displayName}}</h3>
+                <p><small>Log out by using the menu icon at the top left corner</small></p>
+            </md-card>
+
+            <md-card color="primary" *ngIf="!isLoggedIn">
+                <md-card-subtitle>You may use your Google account to fill in some form fields.</md-card-subtitle>
+                <md-card-actions>
+                    <button color="primary" md-button (click)="loginGoogle()" id="google">Sign in with your Google account here</button>
+                </md-card-actions>
+            </md-card>
+
+            <md-card>
+
+                <md-input-container>
+                    <input mdInput placeholder="Your name" value="{{user_displayName}}">
+                </md-input-container>
+
+                <md-input-container>
+                    <input mdInput placeholder="Your email" value="{{user_email}}">
+                </md-input-container>
+
+                <md-input-container>
+                    <textarea mdInput placeholder="" value="Your message">
+                      
+                    </textarea>
+                </md-input-container>
+                <md-card-actions>
+                    <button color="primary" md-button (click)="submit()">Submit</button>
+
+
+                </md-card-actions>
+            </md-card>
+        </md-card-content>
+
+    </md-card>
+    <!--<md-card color="primary" *ngIf="!isLoggedIn">
+        <md-card-subtitle>or make it a bit easier for yourself and:</md-card-subtitle>
+        <md-card-actions>
+            <button color="primary" md-button (click)="loginGoogle()" id="google">Sign in with Google</button>
+        </md-card-actions>
+    </md-card>-->
+
+    <!--<md-card color="primary">
         <md-card-subtitle>Get in touch with us by filling in our</md-card-subtitle>
         <md-card-title>Contact Form</md-card-title>
         <md-input-container>
@@ -54,14 +77,14 @@
               
             </textarea>
         </md-input-container>-->
-  <!--            
+    <!--            
             type="email" mdInput placeholder="Your email" value="">
         </md-input-container>-->
-  <!--<md-card-actions>
+    <!--<md-card-actions>
             <button color="primary" md-button routerLink="/artists" routerLinkActive="active">Submit</button>
         </md-card-actions>
     </md-card>-->
-  <!--<md-card color="primary" *ngIf="!isLoggedIn">
+    <!--<md-card color="primary" *ngIf="!isLoggedIn">
         <md-card-subtitle>or</md-card-subtitle>
         <md-card-title>for extra convinience</md-card-title>
         <md-card-actions>
