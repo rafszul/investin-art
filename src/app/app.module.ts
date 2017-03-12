@@ -6,7 +6,7 @@ import { HttpModule } from '@angular/http';
 // configuration:
 
 import { firebaseConfig } from '../app/config/firebase.config';
-
+import { firebaseAuthConfig } from '../app/config/firebase.auth.config';
 
 // modules:
 
@@ -32,12 +32,13 @@ import { ArtistsComponent } from './artists/artists.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContactComponent } from './contact/contact.component';
 import { ThankYouDialogComponent } from './thank-you-dialog/thank-you-dialog.component';
+import { ImgDetailsComponent } from './img-details/img-details.component';
 
 // services:
 
 import { AuthService } from './providers/auth.service';
-import { AF } from './providers/af';
-import { ImgDetailsComponent } from './img-details/img-details.component';
+// import { AF } from './providers/af';
+import { ImagesService } from './providers/images.service';
 
 @NgModule({
   declarations: [
@@ -64,8 +65,15 @@ import { ImgDetailsComponent } from './img-details/img-details.component';
     AppRoutingModule,
     MaterialModule.forRoot(),
     FlexLayoutModule,
-    AngularFireModule.initializeApp(firebaseConfig)],
-  providers: [AuthService, AF],
-  bootstrap: [AppComponent]
-})
+    AngularFireModule.initializeApp(firebaseConfig, firebaseAuthConfig)
+    ],
+  providers: [
+    AuthService,
+    // AF,
+    ImagesService
+    ],
+  bootstrap: [
+    AppComponent
+    ]
+  })
 export class AppModule { }
