@@ -1,8 +1,5 @@
-import {
-  Component,
-  OnInit,
-  // ViewChild,
-  // ViewContainerRef
+import { Component, OnInit,
+  // ViewChild, ViewContainerRef
 } from '@angular/core';
 
 // import { FIREBASE_PROVIDERS, AngularFire, FirebaseListObservable } from 'angularfire2';

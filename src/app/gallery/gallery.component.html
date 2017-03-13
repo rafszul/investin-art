@@ -1,6 +1,24 @@
-<div class="gallery-container">
+<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="2em">
+    <div fxLayout="row" fxLayoutAlign="space-around stretch" fxLayoutWrap fxFlex>
+        <div class="image-thumb" *ngFor="let image of images" fxFlex="32">
+            <md-card>
+                <img md-card-image src="assets/optimized/images-square/{{ image.imgname }}.jpg" alt="{{ image.title }}">
 
-  <!--<md-card color="primary" *ngFor="let image of images | async">
+            </md-card>
+            <md-card>
+
+                <p md-line>{{ image.title }}, {{ image.year }}</p>
+                <span md-line>{{ image.name }}</span>
+                <button md-icon-button (click)="showDetails(image);sidenav.open()">
+                <md-icon>info</md-icon>
+            </button>
+            </md-card>
+
+        </div>
+    </div>
+</div>
+
+<!--<md-card color="primary" *ngFor="let image of images | async">
     <img src="assets/optimized/images-square/{{ image.imgname }}.jpg" alt="{{ image.title }}">
     <md-card-content>
       <h3 md-line>{{ image.title }}, {{ image.year }}</h3>
@@ -13,16 +31,43 @@
     </md-card-actions>
   </md-card>-->
 
-  <md-grid-list cols="6" gutterSize="1em">
-    <md-grid-tile *ngFor="let image of images | async">
-      <img src="assets/optimized/images-square/{{ image.imgname }}.jpg" alt="{{ image.title }}">
-      <md-grid-tile-footer>
-        <!--<h3 md-line>{{ image.title }}, {{ image.year }}</h3>
-        <span md-line>{{ image.name }}</span>-->
-        <button md-icon-button (click)="showDetails(image);sidenav.open()">
+<!--<div *ngFor="let list of images" fxFlex>
+        <img src="assets/optimized/images-square/{{ image.imgname }}.jpg" alt="{{ image.title }}">
+    </div>-->
+
+<!--<div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutWrap fxLayoutGap="2vw" fxFlex>-->
+
+
+
+
+<!--<div *ngFor="let image of images" fxFlex="30">
+        <md-card>
+            <img md-card-image src="assets/optimized/images-square/{{ image.imgname }}.jpg" alt="{{ image.title }}">
+            <md-card-footer>
+                <button md-button (click)="showDetails(image);sidenav.open()">
+
+                <p md-line>{{ image.title }}</p>
+                <p md-line>{{ image.year }}
+                <span><md-icon>info</md-icon>
+                  </span></p>
+            </button>
+            </md-card-footer>
+        </md-card>
+
+    </div>-->
+
+
+
+
+<!--<md-grid-list cols="6" gutterSize="1em">
+        <md-grid-tile *ngFor="let image of images | async">
+            <img src="assets/optimized/images-square/{{ image.imgname }}.jpg" alt="{{ image.title }}">
+            <md-grid-tile-footer>
+                <h3 md-line>{{ image.title }}, {{ image.year }}</h3>
+        <span md-line>{{ image.name }}</span>
+                <button md-icon-button (click)="showDetails(image);sidenav.open()">
                 <md-icon>info</md-icon>
             </button>
-      </md-grid-tile-footer>
-    </md-grid-tile>
-  </md-grid-list>
-</div>
+            </md-grid-tile-footer>
+        </md-grid-tile>
+    </md-grid-list>-->

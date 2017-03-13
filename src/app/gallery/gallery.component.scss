@@ -1,37 +1,51 @@
 @import '../../styles.scss';
-.gallery-container {
-    margin: 2vw;
+.image-thumb {
+    min-height: 350px;
 }
 
+md-card {
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+// .gallery-container {
+//     margin: 2vw;
+// }
 // md-grid-list {
 //     margin: 6em;
 //     margin-bottom: 1em;
 // }
-md-grid-tile-footer {
-    font-family: 'Raleway', sans-serif;
-    color: #212121;
-    text-align: right;
-}
-
-md-icon {
-    color: #212121;
-}
-
-span {
-    color: #212121;
-}
-
-.mat-grid-tile .mat-grid-tile-footer,
-.mat-grid-tile .mat-grid-tile-header {
-    display: flex;
-    align-items: center;
-    height: 48px;
-    color: #212121;
-    background: rgba(69, 90, 100, .0);
-    overflow: hidden;
-    padding: 0 16px;
-    font-size: 16px;
-    position: absolute;
-    left: 0;
-    right: 0
-}
+// img {
+//     height: 100%;
+// }
+// md-card {
+//     background: rgba(69, 90, 100, .01);
+// }
+// md-card-footer {
+//     display: flex;
+//     font-family: 'Raleway', sans-serif;
+//     color: #212121;
+//     background: rgba(69, 90, 100, .0);
+// }
+// md-icon {
+//     align-items: center;
+//     line-height: 1;
+//     color: #212121;
+// }
+// span {
+//     color: #212121;
+// }
+// .mat-grid-tile .mat-grid-tile-footer,
+// .mat-grid-tile .mat-grid-tile-header {
+//     display: flex;
+//     align-items: center;
+//     height: 48px;
+//     color: #212121;
+//     background: rgba(69, 90, 100, .0);
+//     overflow: hidden;
+//     padding: 0 16px;
+//     font-size: 16px;
+//     position: absolute;
+//     left: 0;
+//     right: 0
+// }
