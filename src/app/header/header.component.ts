@@ -16,16 +16,16 @@ export class HeaderComponent implements OnInit {
 
   loginGoogle() {
     this.authService.loginWithGoogle().then((data) => {
-      this.router.navigate(['hello']);
+      // this.router.navigate(['']);
     });
   }
 
   ngOnInit() {
   }
 
-    logout() {
+  logout() {
     this.authService.logout();
-    this.router.navigate(['hello']);
+      // this.router.navigate(['']);
   }
 
 }

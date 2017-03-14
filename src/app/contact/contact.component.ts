@@ -45,6 +45,11 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
   }
 
+  logout() {
+    this.authService.logout();
+    this.router.navigate(['contact']);
+  }
+
   // addMessage() {
   //   // Open dialog to add add message
   //   // 1. create dialog config

@@ -9,10 +9,9 @@ body {
     color: #212121;
 }
 
-.app {
-    height: 100vh;
-}
-
+// .app {
+//     height: 100vh;
+// }
 header {
     padding-bottom: 2em;
 }
@@ -21,18 +20,21 @@ footer {
     padding-top: 2em;
 }
 
+a {
+    text-decoration: none;
+}
+
 md-menu {
     font-family: 'Raleway', sans-serif;
     color: #455A64;
     text-align: right;
 }
 
-md-menu-item {
-    font-family: 'Raleway', sans-serif;
-    color: #455A64;
-    text-align: right;
-}
-
+// md-menu-item {
+//     font-family: 'Raleway', sans-serif;
+//     color: #455A64;
+//     text-align: right;
+// }
 span {
     font-family: 'Raleway', sans-serif;
     color: #455A64;
@@ -56,13 +58,14 @@ md-card-content {
 }
 
 md-card-actions {
-    font-family: 'Ravi Prakash', cursive;
+    // font-family: 'Ravi Prakash', cursive;
     justify-content: space-between;
     text-align: center;
 }
 
 md-card-title {
-    font-family: 'Ravi Prakash', cursive;
+    font-family: 'Raleway', sans-serif;
+    // font-family: 'Ravi Prakash', cursive;
     text-transform: uppercase;
     color: #455A64;
     text-align: right;

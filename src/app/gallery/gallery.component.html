@@ -1,22 +1,27 @@
-<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="2em">
-    <div fxLayout="row" fxLayoutAlign="space-around stretch" fxLayoutWrap fxFlex>
-        <div class="image-thumb" *ngFor="let image of images" fxFlex="32">
-            <md-card>
-                <img md-card-image src="assets/optimized/images-square/{{ image.imgname }}.jpg" alt="{{ image.title }}">
+<!-- the container regulating single row -->
+<div fxLayout="row" fxLayoutAlign="space-around stretch" fxLayoutWrap fxFlex>
+    <!-- the container for breakponts and ngFor -->
+    <div *ngFor="let image of images" 
+    fxFlex.xs="90" 
+    fxFlex.sm="50" 
+    fxFlex.md="30" 
+    fxFlex.lg="20">
+        <md-card>
+            <img md-card-image src="assets/optimized/images-square/{{ image.imgname }}.jpg" alt="{{ image.title }}">
 
-            </md-card>
-            <md-card>
+        </md-card>
+        <md-card>
 
-                <p md-line>{{ image.title }}, {{ image.year }}</p>
-                <span md-line>{{ image.name }}</span>
-                <button md-icon-button (click)="showDetails(image);sidenav.open()">
+            <p md-line>{{ image.title }}, {{ image.year }}</p>
+            <span md-line>{{ image.name }}</span>
+            <button md-icon-button (click)="showDetails(image);sidenav.open()">
                 <md-icon>info</md-icon>
             </button>
-            </md-card>
+        </md-card>
 
-        </div>
     </div>
 </div>
+
 
 <!--<md-card color="primary" *ngFor="let image of images | async">
     <img src="assets/optimized/images-square/{{ image.imgname }}.jpg" alt="{{ image.title }}">
