@@ -1,5 +1,32 @@
 <!--<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="2em">-->
 <md-card color="primary">
+    <md-card-subtitle>
+        <p>Subtitle first</p>
+    </md-card-subtitle>
+    <md-card-title>
+        <h3>About</h3>
+    </md-card-title>
+    <img md-card-image src="./../../assets/optimized/images-width-800/0016-Molitva.jpg">
+    <md-card-content>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do tempor incididunt ut labore et dolore magna aliqua. Ut enim ad</p>
+    </md-card-content>
+    <md-card-actions>
+        <button color="primary" md-button routerLink="/artists" routerLinkActive="active">Artists</button>
+
+        <button color="primary" md-button routerLink="/art" routerLinkActive="active">Gallery</button>
+    </md-card-actions>
+</md-card>
+<!-- -->
+
+
+
+
+
+
+
+
+<div>
     <md-card-title>Artists represented by investin.art:</md-card-title>
     <md-card color="primary" *ngFor="let artist of artists | async ">
         <!--<md-card-title>Artists represented by investin.art:</md-card-title>-->
@@ -30,7 +57,7 @@
 
         </md-card-actions>
     </md-card>
-</md-card>
+</div>
 <!--
     <md-card *ngFor="let artist of artists | async ">
         <md-card-title-group>

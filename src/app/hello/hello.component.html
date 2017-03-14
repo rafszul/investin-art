@@ -1,55 +1,53 @@
-<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="2em">
+<!--<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="2em">-->
 
-    <!--<div [style.xs]="{'width': 100% }" [style.sm]="{'font-size.rem': 5}" [style.md]="{'font-size.rem': 7}">-->
-    <md-card color="primary" fxFlex.xs="90" fxFlex.sm="50">
-        <md-card-subtitle>Hello</md-card-subtitle>
-        <md-card-title color="primary" *ngIf="isLoggedIn">{{user_displayName}}</md-card-title>
-        <img md-card-image src="./../../assets/optimized/images-width-800/0001-The-Tower.jpg">
-        <md-card-content>
+<!--<div [style.xs]="{'width': 100% }" [style.sm]="{'font-size.rem': 5}" [style.md]="{'font-size.rem': 7}">-->
+<md-card color="primary">
+    <md-card-subtitle>Hello</md-card-subtitle>
+    <md-card-title color="primary" *ngIf="isLoggedIn">{{user_displayName}}</md-card-title>
+    <img md-card-image src="./../../assets/optimized/images-width-800/0001-The-Tower.jpg">
+    <md-card-content>
 
-            <p>
-                Progressive Web App (PWA) is a term used to denote a new software development methodology. Unlike traditional applications, progressive web apps are a hybrid of regular web pages (or websites) and a mobile application. This new application model attempts
-                to combine features offered by most modern browsers with the benefits of mobile experience.
-            </p>
-        </md-card-content>
-        <md-card-actions>
-            <button color="primary" md-button routerLink="/contact" routerLinkActive="active">Contact us</button>
-            <button color="primary" md-button routerLink="/about" routerLinkActive="active">Read more about us</button>
-            <button color="primary" md-button routerLink="/art" routerLinkActive="active">See our collection</button>
+        <p>
+            Progressive Web App (PWA) is a term used to denote a new software development methodology. Unlike traditional applications, progressive web apps are a hybrid of regular web pages (or websites) and a mobile application. This new application model attempts
+            to combine features offered by most modern browsers with the benefits of mobile experience.
+        </p>
+    </md-card-content>
+    <md-card-actions>
+        <button color="primary" md-button routerLink="/contact" routerLinkActive="active">Contact us</button>
+        <button color="primary" md-button routerLink="/about" routerLinkActive="active">Read more about us</button>
+        <button color="primary" md-button routerLink="/art" routerLinkActive="active">See our collection</button>
 
 
-        </md-card-actions>
-    </md-card>
-    <md-card color="primary">
-        <md-card-header>
-            <md-card-title>
-                <h3>Cards are the best</h3>
-            </md-card-title>
-            <md-card-subtitle>
-                <p>Really, they are!</p>
-            </md-card-subtitle>
-        </md-card-header>
-        <img md-card-image src="./../../assets/optimized/images-width-800/0005-Firmament.jpg">
-        <md-card-content>
-            <p>Something pretty...</p>
-        </md-card-content>
-    </md-card>
-    <md-card color="primary">
-        <md-card-header>
-            <md-card-title>
-                <h3>Cards are the best</h3>
-            </md-card-title>
-            <md-card-subtitle>
-                <p>Really, they are!</p>
-            </md-card-subtitle>
-        </md-card-header>
-        <img md-card-image src="./../../assets/optimized/images-width-400/0013-Transformation.jpg">
-        <md-card-content>
-            <p>Progressive Web App (PWA) is a term used to denote a new software development methodology. Unlike traditional applications, progressive web apps are a hybrid of regular web pages (or websites) and a mobile application. This new application
-                model attempts to combine features offered by most modern browsers with the benefits of mobile experience.</p>
-        </md-card-content>
-    </md-card>
-</div>
+    </md-card-actions>
+</md-card>
+<md-card color="primary">
+
+    <md-card-title>
+        <h3>Cards are the best</h3>
+    </md-card-title>
+    <md-card-subtitle>
+        <p>Really, they are!</p>
+    </md-card-subtitle>
+
+    <img md-card-image src="./../../assets/optimized/images-width-800/0005-Firmament.jpg">
+    <md-card-content>
+        <p>Something pretty...</p>
+    </md-card-content>
+</md-card>
+<md-card color="primary">
+    <md-card-title>
+        <h3>Cards are the best</h3>
+    </md-card-title>
+    <md-card-subtitle>
+        <p>Really, they are!</p>
+    </md-card-subtitle>
+    <img md-card-image src="./../../assets/optimized/images-width-400/0013-Transformation.jpg">
+    <md-card-content>
+        <p>Progressive Web App (PWA) is a term used to denote a new software development methodology. Unlike traditional applications, progressive web apps are a hybrid of regular web pages (or websites) and a mobile application. This new application model
+            attempts to combine features offered by most modern browsers with the benefits of mobile experience.</p>
+    </md-card-content>
+</md-card>
+<!--</div>-->
 <!--
     <img md-card-image src="./../assets/members/member-org.jpg">
     <md-card-content>
