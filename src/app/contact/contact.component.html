@@ -48,20 +48,20 @@
 
 
 
-<md-card>
+<md-card color="primary">
     <md-card-subtitle>
         <p>Please get in touch with us by sending us a short message below.</p>
     </md-card-subtitle>
-    <md-card-content>
-        <md-input-container>
+    <md-card-content fxLayout="column" fxLayoutAlign="space-between stretch" fxLayoutGap="2em">
+        <md-input-container fxFlex>
             <input mdInput placeholder="Your name" value="{{user_displayName}}">
         </md-input-container>
 
-        <md-input-container>
+        <md-input-container fxFlex>
             <input mdInput placeholder="Your email" value="{{user_email}}">
         </md-input-container>
 
-        <md-input-container>
+        <md-input-container fxFlex>
             <textarea mdInput placeholder="" value="Your message">
                       
                     </textarea>
