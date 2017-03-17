@@ -1,5 +1,5 @@
 <!--<div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="2em">-->
-<md-card color="primary">
+<!--<md-card color="primary">
     <md-card-subtitle>
         <p>Subtitle first</p>
     </md-card-subtitle>
@@ -16,128 +16,48 @@
 
         <button color="primary" md-button routerLink="/art" routerLinkActive="active">Gallery</button>
     </md-card-actions>
-</md-card>
-<!-- -->
+</md-card>-->
 
 
+<md-card color="primary">
+    <md-card-subtitle>
+        <p>Artists represented by investin.art</p>
+    </md-card-subtitle>
 
-
-
-
-
-
-<div>
-    <md-card-title>Artists represented by investin.art:</md-card-title>
-    <md-card color="primary" *ngFor="let artist of artists | async ">
-        <!--<md-card-title>Artists represented by investin.art:</md-card-title>-->
-        <!--<img md-list-avatar src="{{ artist.imgsmall }}" alt="{{ artist.name }}">-->
-        <md-card-content>
-
-            <md-list-item>
-                <img md-list-avatar src="{{ artist.imgsmall }}" alt="{{ artist.name }}">
-                <!--<img md-list-avatar src="./../../assets/avatars/yu-sq-100x100.jpg" alt="{{ artist.name }}">-->
-                <h3 md-line>{{ artist.name }}</h3>
-                <p md-line><span>{{ artist.profession }}</span></p>
-                <p md-line><span>{{ artist.about }}</span></p>
-                <button color="primary" md-button>
-                  <a md-line href="{{ artist.website }}"><span>{{ artist.website }}</span></a></button>
-                <button color="primary" md-button>
-                  <a md-line href="mailto:{{ artist.email }}"><span>{{ artist.email }}</span></a>
-                </button>
-
-            </md-list-item>
-
-
-        </md-card-content>
-        <md-card-actions>
-            <!--<button color="primary" md-button href="{{ artist.website }}" routerLinkActive="active">{{ artist.website }}</button>
-            <button color="primary" md-button href="mailto:{{ artist.email }}" routerLinkActive="active">{{ artist.email }}</button>-->
-
-
-
-        </md-card-actions>
-    </md-card>
-</div>
-<!--
-    <md-card *ngFor="let artist of artists | async ">
-        <md-card-title-group>
-            <img md-card-md-image src="./../../assets/avatars/yu-sq-100x100.jpg">
-            <md-card-title>
-                <h4> {{ artist.name }} </h4>
-            </md-card-title>
-            <md-card-subtitle> {{ artist.profession }} </md-card-subtitle>
-            <md-card-content>
-                <span> My work represents my journey as an artist and human being. This journey is always about physical, mental and spiritual change. As I cross through space and time... </span>
-            </md-card-content>
-        </md-card-title-group>-->
-<!--<img md-card-image src="./../../assets/avatars/yu-sq.jpg" alt="{{ artist.name }}">-->
-<!--<md-card-content>
-        <p>
-          {{ artist.about }}
-        </p>
-      </md-card-content>
-      <md-card-actions>
-        <button md-button>Gallery</button>
-      </md-card-actions>-->
-<!--</md-card>-->
-<!--<md-card-header>
-      <div md-card-avatar class="example-header-image"></div>
-      <md-card-title>Shiba Inu</md-card-title>
-      <md-card-subtitle>Dog Breed</md-card-subtitle>
-    </md-card-header>
+    <img md-card-image src="./../../assets/optimized/images-width-800/0009-Reincarnation-1.jpg">
+    <md-card-title>Our Artists:</md-card-title>
     <md-card-content>
-      <md-list>
-        <md-list-item *ngFor="let message of messages">
-          <img md-list-avatar src="https://source.unsplash.com/random/50x50" alt="...">
-          <h3 md-line>Yuliya V Krylova</h3>
-          <p md-line>
-            <span> My work represents my journey as an artist and human being. This journey is always about physical, mental and spiritual change. As I cross through space and time... </span></p>
-        </md-list-item>
-      </md-list>
 
+        <!-- the list starts below-->
 
+        <md-card color="primary" *ngFor="let artist of artists | async ">
 
+            <md-card-subtitle>
+                {{ artist.profession }}
+            </md-card-subtitle>
+            <md-card-title>
+                {{ artist.name }}
+            </md-card-title>
+            <img md-list-avatar src="{{ artist.imgsmall }}" alt="{{ artist.name }}">
+
+            <md-card-content>
+                <q md-line>{{ artist.about }}</q>
+            </md-card-content>
+            <md-card-actions>
+                <a href="{{ artist.website }}" md-button target="_blank"><span>Link</span></a>
+
+                <a href="mailto:{{ artist.email }}" md-button target="_blank"><span>Email</span></a>
+            </md-card-actions>
+        </md-card>
     </md-card-content>
+    <!--<p>
+        If you would like us to represent you or are interested in any of the artists please contact us by following the links below
+    </p>
     <md-card-actions>
-      <button md-button>LIKE</button>
-      <button md-button>SHARE</button>
+        <button color="primary" md-button routerLink="/contact" routerLinkActive="active">Contact us</button>
+        <button color="primary" md-button routerLink="/about" routerLinkActive="active">Read more about us</button>
+        <button color="primary" md-button routerLink="/art" routerLinkActive="active">See our collection</button>
+
+
     </md-card-actions>-->
-
-<!--<img md-card-image src="https://source.unsplash.com/random/600x300">-->
-
-
-<!--<md-card color="primary">
-    <md-card-title-group>
-
-      <md-card-title>Card with title</md-card-title>
-      <md-card-subtitle>Subtitle</md-card-subtitle>
-    </md-card-title-group>
-  </md-card>-->
-
-<!--<md-list fxFlexAlign="center ">
-    <md-list-item> Pepper </md-list-item>
-    <md-list-item> Salt </md-list-item>
-    <md-list-item> Paprika </md-list-item>
-  </md-list>-->
-
-
-
-<!--<md-list>
-    <md-list-item> Pepper </md-list-item>
-    <md-list-item> Salt </md-list-item>
-    <md-list-item> Paprika </md-list-item>
-  </md-list>-->
-
-
-
-<!--this is for chat/contact component -->
-<!--<md-list-item *ngFor="let message of messages ">
-            <img md-list-avatar src="... " alt="... ">
-            <h3 md-line> {{message.from}} </h3>
-            <p md-line>
-                <span> {{message.subject}} </span>
-                <span class="demo-2 "> -- {{message.message}} </span>
-            </p>
-        </md-list-item>-->
-
-<!--</div>-->
+</md-card>
