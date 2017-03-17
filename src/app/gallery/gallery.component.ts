@@ -9,6 +9,7 @@ import { Component, OnInit,
 // import { AuthService } from '../providers/auth.service';
 
 import { ImagesService } from '../providers/images.service';
+import { DialogsService } from '../providers/dialogs.service';
 
 @Component({
   selector: 'investin-art-gallery',
@@ -19,14 +20,19 @@ import { ImagesService } from '../providers/images.service';
 export class GalleryComponent implements OnInit {
 
   images: any;
+  public result: any;
 
   // images: FirebaseListObservable<any[]>;
 
-  constructor(
-    private imagesService: ImagesService
+  constructor( private imagesService: ImagesService, private dialogsService: DialogsService
     // private vcr: ViewContainerRef,
     // private mdDialog: MdDialog
     ) { }
+public openDialog() {
+    this.dialogsService
+      .confirm('Confirm Dialog', 'Are you sure you want to do this?')
+      .subscribe(res => this.result = res);
+  }
 
   ngOnInit() {
     this.imagesService.getImages().subscribe(images => {

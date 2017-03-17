@@ -15,6 +15,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import 'hammerjs';
 import { AngularFireModule, AuthProviders, AuthMethods } from 'angularfire2';
 import { AppRoutingModule } from './app-routing.module';
+import {DialogsModule } from './providers/dialogs.module';
 
 // components:
 
@@ -56,7 +57,7 @@ import { ImagesService } from './providers/images.service';
     NavbarComponent,
     ContactComponent,
     ThankYouDialogComponent,
-    ImgDetailsComponent,
+    // ImgDetailsComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,13 +66,17 @@ import { ImagesService } from './providers/images.service';
     AppRoutingModule,
     MaterialModule.forRoot(),
     FlexLayoutModule,
-    AngularFireModule.initializeApp(firebaseConfig, firebaseAuthConfig)
+    AngularFireModule.initializeApp(firebaseConfig, firebaseAuthConfig),
+    DialogsModule,
     ],
   providers: [
     AuthService,
     // AF,
     ImagesService
     ],
+  // entryComponents: [
+  //   ImgDetailsComponent
+  //   ],
   bootstrap: [
     AppComponent
     ]
