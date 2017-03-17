@@ -32,12 +32,12 @@
         </md-card>
         <md-card color="primary" *ngIf="!isLoggedIn">
             <md-card-subtitle>
-                <p>You may use your Google account to fill in some form fields.
+                <p>You may sign in and use your Google account to fill in some details in the form fields.
                 </p>
             </md-card-subtitle>
             <md-card-actions>
 
-                <button color="primary" md-button (click)="loginGoogle()" id="google">Sign in with your Google account here</button>
+                <button color="primary" md-button (click)="loginGoogle()" id="google"><span>Google sign-in</span></button>
             </md-card-actions>
         </md-card>
     </md-card-content>
@@ -52,17 +52,17 @@
     <md-card-subtitle>
         <p>Please get in touch with us by sending us a short message below.</p>
     </md-card-subtitle>
-    <md-card-content fxLayout="column" fxLayoutAlign="space-between stretch" fxLayoutGap="2em">
-        <md-input-container fxFlex>
-            <input mdInput placeholder="Your name" value="{{user_displayName}}">
+    <md-card-content fxLayoutGap="10px">
+        <md-input-container fxLayout="column" fxLayoutAlign="space-around stretch">
+            <input mdInput placeholder="Your name" value="{{user_displayName}}" fxFlex>
         </md-input-container>
 
-        <md-input-container fxFlex>
-            <input mdInput placeholder="Your email" value="{{user_email}}">
+        <md-input-container fxLayout="column" fxLayoutAlign="space-around stretch">
+            <input mdInput placeholder="Your email" value="{{user_email}}" fxFlex>
         </md-input-container>
 
-        <md-input-container fxFlex>
-            <textarea mdInput placeholder="" value="Your message">
+        <md-input-container fxLayout="column" fxLayoutAlign="space-around stretch">
+            <textarea mdInput placeholder="Your message" value="Your message" fxFlex>
                       
                     </textarea>
         </md-input-container>
