@@ -10,13 +10,15 @@ import { ImagesService } from '../providers/images.service';
 })
 export class ImgDetailsComponent implements OnInit {
   images: any;
-  constructor(private imagesService: ImagesService, public dialogRef: MdDialogRef<ImgDetailsComponent>) { }
+  constructor(
+    private imagesService: ImagesService,
+    public dialogRef: MdDialogRef<ImgDetailsComponent>) { }
 
   ngOnInit() {
-    this.imagesService.getImages().subscribe(images => {
-      console.log(images);
-      this.images = images;
-    });
+    // this.imagesService.getImages().subscribe(images => {
+    //   console.log(images);
+    //   this.images = images;
+    // });
   }
 
 }
