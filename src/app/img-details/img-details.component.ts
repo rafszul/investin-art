@@ -8,6 +8,9 @@ import { ImagesService } from '../providers/images.service';
   templateUrl: './img-details.component.html',
   styleUrls: ['./img-details.component.scss']
 })
+
+
+
 export class ImgDetailsComponent implements OnInit {
   images: any;
   constructor(

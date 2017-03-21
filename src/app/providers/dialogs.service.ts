@@ -10,6 +10,7 @@ export class DialogsService {
 
     public confirm(title: string, message: string): Observable<boolean> {
 
+
         let dialogRef: MdDialogRef<ImgDetailsComponent>;
 
         dialogRef = this.dialog.open(ImgDetailsComponent);

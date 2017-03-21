@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { Image } from './image'
 
 // import {Observable} from 'rxjs/Observable';
 // import { FIREBASE_PROVIDERS, AngularFire, FirebaseListObservable } from 'angularfire2';
