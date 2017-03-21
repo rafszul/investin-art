@@ -1,16 +1,29 @@
 {
     "artists": [{
-        "id": "0001a",
-        "img": "./../../assets/avatars/yu-sq.jpg",
-        "imgsmall": "./../../assets/avatars/yu-sq-100x100.jpg",
-        "name": "Yuliya V Krylova",
-        "email": "y_krylova@yahoo.com",
-        "website": "http://thehouseofdreams.co.uk/",
-        "aboutshort": "My work represents my journey as an artist and ...",
-        "about": "My work represents my journey as an artist and human being. This journey is always about physical, mental and spiritual change. As I cross through space and time of living in Soviet Union, United States, England and somewhere in between, memory shapes a new kind of view of the world and the landscape of my living gets reshaped and altered. I enjoy folk fairytales, myths and often old characters seep through into the canvas to connect past, present and future.",
-        "profession": "Painter and designer of wereable art"
+            "id": "0001a",
+            "img": "./../../assets/avatars/yu-sq.jpg",
+            "imgsmall": "./../../assets/avatars/yu-sq-100x100.jpg",
+            "name": "Yuliya V Krylova",
+            "email": "y_krylova@yahoo.com",
+            "website": "http://thehouseofdreams.co.uk/",
+            "aboutshort": "My work represents my journey as an artist and ...",
+            "about": "My work represents my journey as an artist and human being. This journey is always about physical, mental and spiritual change. As I cross through space and time of living in Soviet Union, United States, England and somewhere in between, memory shapes a new kind of view of the world and the landscape of my living gets reshaped and altered. I enjoy folk fairytales, myths and often old characters seep through into the canvas to connect past, present and future.",
+            "profession": "Painter and designer of wereable art"
 
-    }],
+        },
+        {
+            "id": "0002a",
+            "img": "./../../assets/avatars/yu-sq.jpg",
+            "imgsmall": "./../../assets/avatars/yu-sq-100x100.jpg",
+            "name": "Yuliya V Krylova",
+            "email": "y_krylova@yahoo.com",
+            "website": "http://thehouseofdreams.co.uk/",
+            "aboutshort": "My work represents my journey as an artist and ...",
+            "about": "My work represents my journey as an artist and human being. This journey is always about physical, mental and spiritual change. As I cross through space and time of living in Soviet Union, United States, England and somewhere in between, memory shapes a new kind of view of the world and the landscape of my living gets reshaped and altered. I enjoy folk fairytales, myths and often old characters seep through into the canvas to connect past, present and future.",
+            "profession": "Painter and designer of wereable art"
+
+        }
+    ],
     "images": [{
 
         "id": "0001",
@@ -250,18 +263,67 @@
         "size": "91x61cm unframed",
         "name": "Yuliya V Krylova",
         "price": ""
-    }, {
+            // }, {
 
-        "id": "0019",
-        "img": "/assets/optimized/images-width-800/",
-        "imgsmall": "/assets/optimized/images-width-400/",
-        "imgsq": "/assets/optimized/images-square/",
-        "imgname": "0019-Three-Graces-Triptych",
-        "title": "Three Graces Triptych",
-        "year": "2000",
-        "medium": "Ink on paper",
-        "size": "framed",
-        "name": "Yuliya V Krylova",
-        "price": ""
-    }]
+        //     "id": "0019",
+        //     "img": "/assets/optimized/images-width-800/",
+        //     "imgsmall": "/assets/optimized/images-width-400/",
+        //     "imgsq": "/assets/optimized/images-square/",
+        //     "imgname": "0019-Three-Graces-Triptych",
+        //     "title": "Three Graces Triptych",
+        //     "year": "2000",
+        //     "medium": "Ink on paper",
+        //     "size": "framed",
+        //     "name": "Yuliya V Krylova",
+        //     "price": ""
+    }],
+    "logos": [{
+
+            "img": "/assets/logo/investin-art-003-00.jpg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "liked": "0"
+        },
+        {
+
+            "img": "/assets/logo/investin-art-003-01.jpg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "liked": "0"
+        },
+        {
+
+            "img": "/assets/logo/investin-art-003-02.jpg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "liked": "0"
+        },
+        {
+
+            "img": "/assets/logo/investin-art-003-03.jpg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "liked": "0"
+        },
+        {
+
+            "img": "/assets/logo/investin-art-003-04.jpg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "liked": "0"
+        },
+        {
+
+            "img": "/assets/logo/investin-art-003-05.jpg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "liked": "0"
+        },
+        {
+
+            "img": "/assets/logo/investin-art-003-06.jpg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "liked": "0"
+        },
+        {
+
+            "img": "/assets/logo/investin-art-003-07.jpg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "liked": "0"
+        }
+    ]
 }
