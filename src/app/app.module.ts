@@ -40,6 +40,7 @@ import { ImgDetailsComponent } from './img-details/img-details.component';
 import { AuthService } from './providers/auth.service';
 // import { AF } from './providers/af';
 import { ImagesService } from './providers/images.service';
+import { DialogsService } from './providers/dialogs.service';
 
 @NgModule({
   declarations: [
@@ -72,7 +73,8 @@ import { ImagesService } from './providers/images.service';
   providers: [
     AuthService,
     // AF,
-    ImagesService
+    ImagesService,
+    DialogsService
     ],
   // entryComponents: [
   //   ImgDetailsComponent

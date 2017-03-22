@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
-import { Image } from './image'
+import { Image } from './image';
 
 // import {Observable} from 'rxjs/Observable';
 // import { FIREBASE_PROVIDERS, AngularFire, FirebaseListObservable } from 'angularfire2';
@@ -15,7 +15,7 @@ export class ImagesService {
 
   constructor(private af: AngularFire) {};
 
-  getImages(): FirebaseListObservable<Images[]> {
+  getImages(): FirebaseListObservable<Image[]> {
   return this.af.database.list('/images');
 }
 }
@@ -50,19 +50,19 @@ export class ImagesService {
 
 
 
-interface Images {
-    // $key: $value;
-    id?: string;
-    img?: string;
-    imgsmall?: string;
-    imgsq?: string;
-    imgname?: string;
-    title?: string;
-    year?: string;
-    medium?: string;
-    size?: string;
-    name?: string;
-    price?: string;
-}
+// interface Images {
+//     $key: $value;
+//     id?: string;
+//     img?: string;
+//     imgsmall?: string;
+//     imgsq?: string;
+//     imgname?: string;
+//     title?: string;
+//     year?: string;
+//     medium?: string;
+//     size?: string;
+//     name?: string;
+//     price?: string;
+// }
 
 

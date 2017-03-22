@@ -1,4 +1,4 @@
-export interface Image {
+export class Image {
     id: string;
     img: string;
     imgsmall: string;
