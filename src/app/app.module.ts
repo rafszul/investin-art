@@ -17,10 +17,12 @@ import { firebaseConfig } from '../app/config/firebase.config';
 // components:
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './layout/header/header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
