@@ -6,13 +6,13 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue.
-$investin-art-app-primary: mat-palette($mat-blue-grey);
-$investin-art-app-accent: mat-palette($mat-orange, A200, A100, A400);
+$investinART-app-primary: mat-palette($mat-blue-grey);
+$investinART-app-accent: mat-palette($mat-orange, A200, A100, A400);
 // The warn palette is optional (defaults to red).
-$investin-art-app-warn: mat-palette($mat-deep-orange);
+$investinART-app-warn: mat-palette($mat-deep-orange);
 // Create the theme object (a Sass map containing all of the palettes).
-$investin-art-app-theme: mat-light-theme($investin-art-app-primary, $investin-art-app-accent, $investin-art-app-warn);
+$investinART-app-theme: mat-light-theme($investinART-app-primary, $investinART-app-accent, $investinART-app-warn);
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include angular-material-theme($investin-art-app-theme);
+@include angular-material-theme($investinART-app-theme);
