@@ -16,7 +16,7 @@ import { firebaseConfig } from '../app/config/firebase.config';
 
 // services:
 
-import { Image, ImageService, DialogService } from './shared';
+import { Image, ImageService, DialogService, DialogModule } from './shared';
 
 // components:
 
@@ -51,7 +51,8 @@ import { DialogComponent } from './shared/dialog/dialog.component';
     MaterialModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig),
+    DialogModule
   ],
   providers: [ ImageService, DialogService ],
   bootstrap: [AppComponent]
