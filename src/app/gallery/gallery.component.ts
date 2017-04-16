@@ -5,7 +5,6 @@ import { Image, ImageService } from './../shared';
   selector: 'investinart-gallery',
   templateUrl: './gallery.component.html',
   styleUrls: ['./gallery.component.scss'],
-  providers: [ ImageService ]
 })
 export class GalleryComponent implements OnInit {
 
