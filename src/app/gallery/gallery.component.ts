@@ -1,15 +1,25 @@
 import { Component, OnInit } from '@angular/core';
+import { Image, ImageService } from './../shared';
 
 @Component({
   selector: 'investinart-gallery',
   templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.scss']
+  styleUrls: ['./gallery.component.scss'],
+  providers: [ ImageService ]
 })
 export class GalleryComponent implements OnInit {
 
-  constructor() { }
+  image: Image;
+  images: Image[];
 
-  ngOnInit() {
+  constructor(private imageService: ImageService) {}
+
+  ngOnInit(): void {
+    this.images = this.imageService.getImages();
+  }
+
+  onselect(image: Image): void {
+    this.image = image;
   }
 
 }
