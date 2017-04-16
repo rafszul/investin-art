@@ -16,7 +16,7 @@ import { firebaseConfig } from '../app/config/firebase.config';
 
 // services:
 
-import { Image, ImageService } from './shared';
+import { Image, ImageService, DialogService } from './shared';
 
 // components:
 
@@ -27,6 +27,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { HelloComponent } from './hello/hello.component';
 import { AboutComponent } from './about/about.component';
+import { DialogComponent } from './shared/dialog/dialog.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,11 @@ import { AboutComponent } from './about/about.component';
     FooterComponent,
     GalleryComponent,
     HelloComponent,
-    AboutComponent
+    AboutComponent,
+    DialogComponent
+  ],
+  entryComponents: [
+    DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +53,7 @@ import { AboutComponent } from './about/about.component';
     FlexLayoutModule,
     AngularFireModule.initializeApp(firebaseConfig)
   ],
-  providers: [ ImageService ],
+  providers: [ ImageService, DialogService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

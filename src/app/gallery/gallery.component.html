@@ -7,7 +7,7 @@
 
             <p md-line>{{ image.title }}, {{ image.year }}</p>
             <span md-line>{{ image.name }}</span>
-            <button md-icon-button (click)="openDialog()">
+            <button md-icon-button (click)="openDialog(image)">
                 <md-icon>info</md-icon>
             </button>
         </md-card>
