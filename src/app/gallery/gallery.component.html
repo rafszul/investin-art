@@ -1,3 +1,19 @@
-<p>
-  gallery works!
-</p>
+<!-- the container regulating single row -->
+<div fxLayout="row" fxLayoutAlign="space-around stretch" fxLayoutWrap fxFlex>
+    <!-- the container for breakponts and ngFor -->
+    <div *ngFor="let image of images" fxFlex.xs="90%" fxFlex.sm="50%" fxFlex.md="30%" fxFlex.lg="25%">
+        <md-card>
+            <img md-card-image src="assets/optimized/images-square/{{ image.imgname }}.jpg" alt="{{ image.title }}">
+
+            <!--</md-card>
+        <md-card>-->
+
+            <p md-line>{{ image.title }}, {{ image.year }}</p>
+            <span md-line>{{ image.name }}</span>
+            <button md-icon-button (click)="openDialog()">
+                <md-icon>info</md-icon>
+            </button>
+        </md-card>
+
+    </div>
+</div>

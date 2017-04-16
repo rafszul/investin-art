@@ -21,6 +21,7 @@ import { HeaderComponent } from './layout/header/header.component';
 import { NavbarComponent } from './layout/navbar/navbar.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { HelloComponent } from './hello/hello.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     HeaderComponent,
     NavbarComponent,
     FooterComponent,
-    GalleryComponent
+    GalleryComponent,
+    HelloComponent
   ],
   imports: [
     BrowserModule,
