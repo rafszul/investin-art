@@ -18,11 +18,15 @@ import { firebaseConfig } from '../app/config/firebase.config';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
