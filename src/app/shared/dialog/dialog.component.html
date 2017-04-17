@@ -1,6 +1,20 @@
 <md-dialog-content>
+    <img md-card-image src="./../../assets/optimized/images-width-800/0005-Firmament.jpg">
     <!--<span md-line>{{ image.name }}</span>-->
-    <span md-line>dupa</span>
+    <!--<span md-line>
+                <p>{{ title }}</p>
+        <p>{{ message }}</p>
+
+    </span>-->
+
+    <md-card>
+        <!--<img md-card-image src="./../../assets/optimized/images-width-800/0005-Firmament.jpg">-->
+        <span md-line>
+                <p>{{ title }}</p>
+        <p>{{ message }}</p>
+
+    </span>
+    </md-card>
 
     <!-- <md-card color="primary">
 
@@ -11,7 +25,7 @@
             <p>Really, they are!</p>
         </md-card-subtitle>-->
 
-    <img src="./../../assets/optimized/images-width-800/0005-Firmament.jpg">
+    <!--<img src="./../../assets/optimized/images-width-800/0005-Firmament.jpg">-->
     <!--<md-card-content>
             <p>Something pretty...</p>
         </md-card-content>
@@ -19,5 +33,8 @@
 
 </md-dialog-content>
 <md-dialog-actions>
-    <button md-button coloor="primary" aria-label="label" md-dialog-close>label</button>
+    <button type="button" md-raised-button (click)="dialogRef.close(true)">OK</button>
+    <button type="button" md-button (click)="dialogRef.close()">Cancel</button>
+
+    <button md-button coloor="alert" aria-label="label" md-dialog-close>label</button>
 </md-dialog-actions>
