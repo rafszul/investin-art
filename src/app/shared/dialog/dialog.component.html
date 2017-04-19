@@ -1,16 +1,16 @@
 <md-dialog-content>
-    <img md-card-image src="./../../assets/optimized/images-width-800/0005-Firmament.jpg">
-    <!--<span md-line>{{ image.name }}</span>-->
+    <!--<img md-card-image src="./../../assets/optimized/images-width-800/0005-Firmament.jpg">-->
+    <!--<span md-line>{{ selectedImage?.name }}</span>-->
     <!--<span md-line>
                 <p>{{ title }}</p>
         <p>{{ message }}</p>
 
     </span>-->
 
-    <md-card>
+    <md-card *ngFor="let image of images">
         <!--<img md-card-image src="./../../assets/optimized/images-width-800/0005-Firmament.jpg">-->
         <span md-line>
-                <p>{{ title }}</p>
+                <p>{{ image.name }}</p>
         <p>{{ message }}</p>
 
     </span>

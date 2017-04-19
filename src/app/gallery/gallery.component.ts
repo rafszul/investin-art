@@ -23,10 +23,11 @@ export class GalleryComponent implements OnInit {
   ngOnInit() {
     this.images = this.imageService.getImages();
   }
-  openDialog() {
+openDialog(image: Image) {
     this.dialogService
       .confirm('Confirm Dialog', 'Are you sure you want to do this?')
       .subscribe(res => this.result = res);
+    this.selectedImage = this.image;
 }
   onselect(image: Image): void {
     this.image = image;
