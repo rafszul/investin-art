@@ -29,6 +29,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { HelloComponent } from './hello/hello.component';
 import { AboutComponent } from './about/about.component';
 import { DialogComponent } from './shared/dialog/dialog.component';
+import { GalleryDemo02Component } from './gallery-demo-02/gallery-demo-02.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { DialogComponent } from './shared/dialog/dialog.component';
     AboutComponent,
     DialogComponent
       ],
+
   entryComponents: [
     DialogComponent
   ],
