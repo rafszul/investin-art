@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import 'hammerjs';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AngularFireModule } from 'angularfire2';
+import { NgxGalleryModule } from 'ngx-gallery';
 
 // configuration:
 
@@ -39,7 +40,7 @@ import { DialogComponent } from './shared/dialog/dialog.component';
     HelloComponent,
     AboutComponent,
     DialogComponent
-  ],
+      ],
   entryComponents: [
     DialogComponent
   ],
@@ -51,7 +52,8 @@ import { DialogComponent } from './shared/dialog/dialog.component';
     MaterialModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig),
+    NgxGalleryModule
   ],
   providers: [ ImageService, DialogService ],
   bootstrap: [AppComponent]
