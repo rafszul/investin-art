@@ -1,5 +1,5 @@
 export class Image {
-    id: string;
+    id: number;
     img: string;
     imgsmall: string;
     imgsq: string;

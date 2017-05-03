@@ -11,4 +11,11 @@ export class ImageService {
     return IMAGES;
   }
 
+  getRandomImage(): Image {
+  let images = this.getImages();
+  let randomKey: number = Math.floor(Math.random() * images.length);
+  return images[randomKey];
+
+}
+
 }

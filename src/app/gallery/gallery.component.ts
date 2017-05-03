@@ -2,13 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Image, ImageService } from './../shared';
 import { MdDialog } from '@angular/material';
 import { DialogComponent } from './../shared/dialog/dialog.component';
-import {DialogService} from './../shared/dialog.service';
+import { DialogService } from './../shared/dialog.service';
 
 @Component({
   selector: 'investinart-gallery',
   templateUrl: './gallery.component.html',
-  styleUrls: ['./gallery.component.scss'],
-  providers: [ImageService]
+  styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent implements OnInit {
   result: any;
@@ -16,22 +15,23 @@ export class GalleryComponent implements OnInit {
   images: Image[];
   selectedImage: Image;
 
-  constructor(private imageService: ImageService,
+  constructor(public imageService: ImageService,
               private dialogService: DialogService,
               public dialog: MdDialog) {}
 
   ngOnInit() {
     this.images = this.imageService.getImages();
   }
-openDialog(image: Image) {
+  onSelect(image: Image): void {
+    this.image = image;
+  }
+
+  openDialog(image: Image) {
     this.dialogService
       .confirm('Confirm Dialog', 'Are you sure you want to do this?')
       .subscribe(res => this.result = res);
     this.selectedImage = this.image;
 }
-  onselect(image: Image): void {
-    this.image = image;
-  }
 
   // openDialog(image: Image) {
   //   this.selectedImage = image;

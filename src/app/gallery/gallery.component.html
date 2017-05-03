@@ -14,7 +14,7 @@
             <button md-icon-button (click)="openDialog(selectedImage)">
                 <md-icon>info</md-icon>
             </button>
-            <button md-icon-button (click)="showDetails(model)">
+            <button md-icon-button (click)="onSelect(thisImage)" [class.selected]="thisImage === image">
                                       <md-icon>add</md-icon>
                       </button>
         </md-card>

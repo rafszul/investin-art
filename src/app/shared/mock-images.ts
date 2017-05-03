@@ -3,7 +3,7 @@ import { Image } from './image.model';
 export const IMAGES: Image[] = [
 {
 
-        'id': '0001',
+        'id': 1,
         'img': '/assets/optimized/images-width-800/',
         'imgsmall': '/assets/optimized/images-width-400/',
         'imgsq': '/assets/optimized/images-square/',
@@ -16,7 +16,7 @@ export const IMAGES: Image[] = [
         'price': ''
     }, {
 
-        'id': '0002',
+        'id': 2,
         'img': '/assets/optimized/images-width-800/',
         'imgsmall': '/assets/optimized/images-width-400/',
         'imgsq': '/assets/optimized/images-square/',
@@ -29,7 +29,7 @@ export const IMAGES: Image[] = [
         'price': ''
     }, {
 
-        'id': '0003',
+        'id': 3,
         'img': '/assets/optimized/images-width-800/',
         'imgsmall': '/assets/optimized/images-width-400/',
         'imgsq': '/assets/optimized/images-square/',
@@ -42,7 +42,7 @@ export const IMAGES: Image[] = [
         'price': ''
     }, {
 
-        'id': '0004',
+        'id': 4,
         'img': '/assets/optimized/images-width-800/',
         'imgsmall': '/assets/optimized/images-width-400/',
         'imgsq': '/assets/optimized/images-square/',
@@ -56,7 +56,7 @@ export const IMAGES: Image[] = [
     }, {
 
 
-        'id': '0005',
+        'id': 5,
         'img': '/assets/optimized/images-width-800/',
         'imgsmall': '/assets/optimized/images-width-400/',
         'imgsq': '/assets/optimized/images-square/',
@@ -70,7 +70,7 @@ export const IMAGES: Image[] = [
     }, {
 
 
-        'id': '0006',
+        'id': 6,
         'img': '/assets/optimized/images-width-800/',
         'imgsmall': '/assets/optimized/images-width-400/',
         'imgsq': '/assets/optimized/images-square/',
@@ -84,7 +84,7 @@ export const IMAGES: Image[] = [
     }, {
 
 
-        'id': '0007',
+        'id': 7,
         'img': '/assets/optimized/images-width-800/',
         'imgsmall': '/assets/optimized/images-width-400/',
         'imgsq': '/assets/optimized/images-square/',
@@ -97,7 +97,7 @@ export const IMAGES: Image[] = [
         'price': ''
     }, {
 
-        'id': '0008',
+        'id': 8,
         'img': '/assets/optimized/images-width-800/',
         'imgsmall': '/assets/optimized/images-width-400/',
         'imgsq': '/assets/optimized/images-square/',
@@ -110,7 +110,7 @@ export const IMAGES: Image[] = [
         'price': ''
     }, {
 
-        'id': '0009',
+        'id': 9,
         'img': '/assets/optimized/images-width-800/',
         'imgsmall': '/assets/optimized/images-width-400/',
         'imgsq': '/assets/optimized/images-square/',
@@ -123,7 +123,7 @@ export const IMAGES: Image[] = [
         'price': ''
     }, {
 
-        'id': '0010',
+        'id': 10,
         'img': '/assets/optimized/images-width-800/',
         'imgsmall': '/assets/optimized/images-width-400/',
         'imgsq': '/assets/optimized/images-square/',
@@ -136,7 +136,7 @@ export const IMAGES: Image[] = [
         'price': ''
     }, {
 
-        'id': '0011',
+        'id': 11,
         'img': '/assets/optimized/images-width-800/',
         'imgsmall': '/assets/optimized/images-width-400/',
         'imgsq': '/assets/optimized/images-square/',
@@ -149,7 +149,7 @@ export const IMAGES: Image[] = [
         'price': ''
     }, {
 
-        'id': '0012',
+        'id': 12,
         'img': '/assets/optimized/images-width-800/',
         'imgsmall': '/assets/optimized/images-width-400/',
         'imgsq': '/assets/optimized/images-square/',
@@ -162,7 +162,7 @@ export const IMAGES: Image[] = [
         'price': ''
     }, {
 
-        'id': '0013',
+        'id': 13,
         'img': '/assets/optimized/images-width-800/',
         'imgsmall': '/assets/optimized/images-width-400/',
         'imgsq': '/assets/optimized/images-square/',
@@ -175,7 +175,7 @@ export const IMAGES: Image[] = [
         'price': ''
     }, {
 
-        'id': '0014',
+        'id': 14,
         'img': '/assets/optimized/images-width-800/',
         'imgsmall': '/assets/optimized/images-width-400/',
         'imgsq': '/assets/optimized/images-square/',
@@ -189,7 +189,7 @@ export const IMAGES: Image[] = [
     }, {
 
 
-        'id': '0015',
+        'id': 15,
         'img': '/assets/optimized/images-width-800/',
         'imgsmall': '/assets/optimized/images-width-400/',
         'imgsq': '/assets/optimized/images-square/',
@@ -203,7 +203,7 @@ export const IMAGES: Image[] = [
     }, {
 
 
-        'id': '0016',
+        'id': 16,
         'img': '/assets/optimized/images-width-800/',
         'imgsmall': '/assets/optimized/images-width-400/',
         'imgsq': '/assets/optimized/images-square/',
@@ -216,7 +216,7 @@ export const IMAGES: Image[] = [
         'price': ''
     }, {
 
-        'id': '0017',
+        'id': 17,
         'img': '/assets/optimized/images-width-800/',
         'imgsmall': '/assets/optimized/images-width-400/',
         'imgsq': '/assets/optimized/images-square/',
@@ -229,7 +229,7 @@ export const IMAGES: Image[] = [
         'price': ''
     }, {
 
-        'id': '0018',
+        'id': 18,
         'img': '/assets/optimized/images-width-800/',
         'imgsmall': '/assets/optimized/images-width-400/',
         'imgsq': '/assets/optimized/images-square/',
