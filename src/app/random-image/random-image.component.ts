@@ -13,7 +13,7 @@ export class RandomImageComponent implements OnInit {
   constructor(private imageService: ImageService) { }
 
   ngOnInit() {
-    this.images = this.imageService.getImages();
+    // this.images = this.imageService.getImages();
 
     // let randomKey: number = Math.floor(Math.random() * this.images.length);
 

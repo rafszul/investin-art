@@ -5,6 +5,7 @@
     <md-card-subtitle>What we do and why</md-card-subtitle>
     <!--<md-card-title color="primary" *ngIf="isLoggedIn">{{user_displayName}}</md-card-title>
     <img md-card-image src="./../../assets/optimized/images-width-800/0001-The-Tower.jpg">-->
+
     <md-card-content>
 
         <p>
@@ -21,16 +22,17 @@
 </md-card>
 <md-card color="primary">
 
-    <md-card-title>
+    <!--<md-card-title>
         <h3>Cards are the best</h3>
     </md-card-title>
     <md-card-subtitle>
         <p>Really, they are!</p>
-    </md-card-subtitle>
+    </md-card-subtitle>-->
 
-    <img md-card-image src="./../../assets/optimized/images-width-800/0005-Firmament.jpg">
+    <img md-card-image src="assets/optimized/images-width-400/{{ randomImage.imgname }}.jpg" alt="{{ randomImage.title }}">
     <md-card-content>
-        <p>Something pretty...</p>
+        <p md-line>{{ randomImage.title }}, {{ randomImage.year }}</p>
+        <span md-line>{{ randomImage.name }}</span>
     </md-card-content>
 </md-card>
 <md-card color="primary">

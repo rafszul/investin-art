@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Image, ImageService } from './../shared';
 
 @Component({
   selector: 'investinart-hello',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./hello.component.scss']
 })
 export class HelloComponent implements OnInit {
+  images: Image[];
+  randomImage: Image;
 
-  constructor() { }
+  constructor(
+    private imageService: ImageService
+  ) { }
 
   ngOnInit() {
-  }
 
+    this.randomImage = this.imageService.getRandomImage();
+  }
 }

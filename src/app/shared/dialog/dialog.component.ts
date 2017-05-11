@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { MdDialogRef } from '@angular/material';
 import { Image, ImageService } from '../';
+import { MdDialog, MdDialogConfig } from '@angular/material';
+
+
 
 @Component({
   selector: 'investinart-dialog',
@@ -16,7 +19,8 @@ import { Image, ImageService } from '../';
   styleUrls: ['./dialog.component.scss'],
 })
 export class DialogComponent implements OnInit {
-    image: Image;
+  result: any;
+  image: Image;
   images: Image[];
 
   public title: string;
@@ -28,7 +32,7 @@ export class DialogComponent implements OnInit {
   ngOnInit() {
     this.images = this.imageService.getImages();
 
-    // this.imagesService.getImages().subscribe(images => {
+    // this.imageService.getImages().subscribe(images => {
     //   console.log(images);
     //   this.images = images;
     // });
