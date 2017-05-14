@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'hey-barista-main',
+  selector: 'investinart-main',
   templateUrl: './main.component.html',
   styleUrls: ['./../layout.scss']
 })

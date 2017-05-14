@@ -1,28 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Ubuntu:500&subset=cyrillic,cyrillic-ext');
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat');
+@import './../../styles.scss';
 .header {
     font-family: 'Ubuntu', sans-serif;
-    text-transform: capitalize;
+    color: $primary-color-dark;
+    // text-transform: capitalize;
     padding: 50px 20px 0px;
     z-index: 10; // emmet z10
 }
 
 .logo {
     margin-bottom: 0px;
-    border-bottom-width: 1px;
-    border-bottom-color: black;
+    border-bottom-width: 0px;
+    border-bottom-color: $primary-color-dark;
     border-bottom-style: dotted;
 }
 
 .logoTitle {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 1.2em;
     text-transform: uppercase;
     margin-top: 0px;
 }
 
 .footer {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 1.2em;
     text-transform: uppercase;
     padding: 20px 20px;
