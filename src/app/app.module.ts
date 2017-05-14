@@ -3,7 +3,24 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
+import { MaterialModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import 'hammerjs';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { AngularFireModule } from 'angularfire2';
+
 import { AppRoutingModule } from './app-routing.module';
+
+// configuration:
+
+import { firebaseConfig } from '../app/providers/firebase.config';
+
+// services:
+
+// import { Image, ImageService, DialogService } from './shared';
+
+// components:
+
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -14,7 +31,11 @@ import { AppComponent } from './app.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialModule,
+    BrowserAnimationsModule,
+    FlexLayoutModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
