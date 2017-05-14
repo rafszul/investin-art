@@ -22,10 +22,16 @@ import { firebaseConfig } from '../app/providers/firebase.config';
 // components:
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { MainComponent } from './layout/main/main.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
