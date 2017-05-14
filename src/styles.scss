@@ -1,3 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import url('https://fonts.googleapis.com/css?family=Roboto|Ubuntu:500&subset=cyrillic,cyrillic-ext');
+// @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import 'grey-deep-orange.sass';
+body {
+    // background-image: url('./assets/sq-image-01.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}

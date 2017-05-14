@@ -1,0 +1,160 @@
+{
+	"name": "investin-art-008-03.ai",
+	"width": 32,
+	"height": 32,
+	"layers": [
+		{
+			"x": "-1869.89",
+			"y": "-1774.67",
+			"r": "-116.98",
+			"b": "-1378.67",
+			"width": "1752.91",
+			"height": "396.00",
+			"layername": "logo-rec",
+			"name": "logo-rec",
+			"type": "div",
+			"visible": true,
+			"items": [
+				{
+					"x": 0,
+					"y": 0,
+					"r": "-116.98",
+					"b": "-1378.67",
+					"width": "1752.90",
+					"height": "396.00",
+					"layername": "logo-rec.svg",
+					"name": "logo-rec",
+					"type": "svg",
+					"filename": "logo-rec.svg",
+					"visible": true
+				}
+			]
+		},
+		{
+			"x": "0.00",
+			"y": "-0.00",
+			"r": "32.00",
+			"b": "32.00",
+			"width": "32.00",
+			"height": "32.00",
+			"layername": "logo-sq-fav",
+			"name": "logo-sq-fav",
+			"type": "div",
+			"visible": true,
+			"items": [
+				{
+					"x": 0,
+					"y": 0,
+					"r": "32.00",
+					"b": "32.00",
+					"width": "32.00",
+					"height": "32.00",
+					"layername": "logo-sq-fav.svg",
+					"name": "logo-sq-fav",
+					"type": "svg",
+					"filename": "logo-sq-fav.svg",
+					"visible": true
+				}
+			]
+		},
+		{
+			"x": "-237.77",
+			"y": "-41.50",
+			"r": "-122.77",
+			"b": "73.50",
+			"width": "115.00",
+			"height": "115.00",
+			"layername": "logo-sq-ico",
+			"name": "logo-sq-ico",
+			"type": "div",
+			"visible": true,
+			"items": [
+				{
+					"x": 0,
+					"y": 0,
+					"r": "-122.77",
+					"b": "73.50",
+					"width": "115.00",
+					"height": "115.00",
+					"layername": "logo-sq-ico.svg",
+					"name": "logo-sq-ico",
+					"type": "svg",
+					"filename": "logo-sq-ico.svg",
+					"visible": true
+				}
+			]
+		},
+		{
+			"x": "-1378.58",
+			"y": "-40.17",
+			"r": "-330.58",
+			"b": "1007.83",
+			"width": "1048.00",
+			"height": "1048.00",
+			"layername": "logo-sq",
+			"name": "logo-sq",
+			"type": "div",
+			"visible": true,
+			"items": [
+				{
+					"x": 0,
+					"y": 0,
+					"r": "-330.58",
+					"b": "1007.83",
+					"width": "1048.00",
+					"height": "1048.00",
+					"layername": "logo-sq.svg",
+					"name": "logo-sq",
+					"type": "svg",
+					"filename": "logo-sq.svg",
+					"visible": true
+				}
+			]
+		},
+		{
+			"x": "-3532.83",
+			"y": "-295.31",
+			"r": "-2053.92",
+			"b": "-68.29",
+			"width": "1478.91",
+			"height": "227.02",
+			"layername": "Layer 1 copy 2",
+			"name": "Layer-1-copy-2",
+			"type": "div",
+			"visible": true,
+			"items": [
+				
+			]
+		},
+		{
+			"x": "-3532.83",
+			"y": "375.69",
+			"r": "-2053.92",
+			"b": "602.71",
+			"width": "1478.91",
+			"height": "227.02",
+			"layername": "Layer 1 copy 3",
+			"name": "Layer-1-copy-3",
+			"type": "div",
+			"visible": true,
+			"items": [
+				
+			]
+		},
+		{
+			"x": "-3532.83",
+			"y": "47.69",
+			"r": "-2053.92",
+			"b": "274.71",
+			"width": "1478.91",
+			"height": "227.02",
+			"layername": "Layer 1 copy",
+			"name": "Layer-1-copy",
+			"type": "div",
+			"visible": true,
+			"items": [
+				
+			]
+		}
+	]
+}
