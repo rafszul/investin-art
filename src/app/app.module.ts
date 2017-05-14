@@ -41,7 +41,7 @@ import { MainComponent } from './layout/main/main.component';
     MaterialModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
