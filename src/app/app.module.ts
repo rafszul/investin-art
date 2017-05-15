@@ -25,13 +25,19 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { MainComponent } from './layout/main/main.component';
+import { HelloComponent } from './hello/hello.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { RandomImageComponent } from './random-image/random-image.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    MainComponent
+    MainComponent,
+    HelloComponent,
+    GalleryComponent,
+    RandomImageComponent
   ],
   imports: [
     BrowserModule,
