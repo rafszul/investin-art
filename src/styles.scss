@@ -10,3 +10,61 @@ body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Ubuntu', sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
+
+md-menu {
+    font-family: 'Ubuntu', sans-serif;
+    color: $primary-color-dark;
+    text-align: right;
+}
+
+span {
+    font-family: 'Ubuntu', sans-serif;
+    color: $primary-color-dark;
+    text-align: right;
+}
+
+md-card {
+    font-family: 'Ubuntu', sans-serif;
+    background: rgba(255, 255, 255, 0.1);
+    min-width: 60%;
+    margin: 2em;
+    text-align: right;
+}
+
+md-card-content {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    justify-content: center;
+    text-align: right;
+}
+
+md-card-actions {
+    // font-family: 'Ubuntu', sans-serif;
+    justify-content: space-between;
+    text-align: center;
+}
+
+md-card-title {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: $primary-color-dark;
+    text-align: right;
+}
+
+md-button {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: $primary-color-dark;
+    text-align: center;
+}
+
+button {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: $primary-color-dark;
+    text-align: center;
+}
