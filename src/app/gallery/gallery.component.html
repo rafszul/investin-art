@@ -1,27 +1,25 @@
-<p>
-    gallery works!
-</p>
-
 <!--<div fxLayout="row" fxLayoutAlign="space-around stretch" fxLayoutWrap>
     <p>Result from dialog: {{ result }}</p>
     <span md-line>{{ selectedImage?.name }}</span>
 </div>-->
-<div fxLayout="row" fxLayoutAlign="space-around stretch" fxLayoutWrap>
 
-    <!-- the container for breakponts and ngFor -->
-    <div *ngFor="let image of images" fxFlex.xs="90%" fxFlex.sm="50%" fxFlex.md="30%" fxFlex.lg="25%">
+<p>
+    gallery works!
+</p>
+
+<!-- the container for breakponts and ngFor -->
+<!--<div *ngFor="let image of images" fxFlex.xs="90%" fxFlex.sm="50%" fxFlex.md="30%" fxFlex.lg="25%">
         <md-card>
             <img md-card-image src="assets/optimized/images-square/{{ image.imgname }}.jpg" alt="{{ image.title }}">
 
             <p md-line>{{ image.title }}, {{ image.year }}</p>
             <span md-line>{{ image.name }}</span>
-            <!--<button md-icon-button (click)="openDialog(onSelect, selectedImage)">
+            <button md-icon-button (click)="openDialog(onSelect, selectedImage)">
                 <md-icon>info</md-icon>
-            </button>-->
-            <!--<button md-icon-button (click)="onSelect(thisImage)" [class.selected]="thisImage === image">
+            </button>
+            <button md-icon-button (click)="onSelect(thisImage)" [class.selected]="thisImage === image">
                                       <md-icon>add</md-icon>
-                      </button>-->
+                      </button>
         </md-card>
 
-    </div>
-</div>
+    </div>-->

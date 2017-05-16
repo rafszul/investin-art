@@ -8,23 +8,10 @@ import { Observable } from 'rxjs/Rx';
   styleUrls: ['./gallery.component.scss']
 })
 export class GalleryComponent implements OnInit {
-  // result: any;
-  // image: Image;
-  // images: Image[];
-  // selectedImage: Image;
 
-  constructor(
-    // public imageService: ImageService,
-    // public dialogService: DialogService,
-    // public dialog: MdDialog
-    ) {}
+  constructor() { }
 
   ngOnInit() {
-    // this.images = this.imageService.getImages();
   }
-  // onSelect(image: Image): void {
-  //   this.image = image;
-  //   this.selectedImage = this.image;
-  // }
 
 }

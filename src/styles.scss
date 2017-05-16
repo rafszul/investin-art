@@ -14,7 +14,6 @@ body {
 a {
     text-decoration: none;
 }
-
 md-menu {
     font-family: 'Ubuntu', sans-serif;
     color: $primary-color-dark;
@@ -25,6 +24,7 @@ span {
     font-family: 'Ubuntu', sans-serif;
     color: $primary-color-dark;
     text-align: right;
+    text-transform: uppercase;
 }
 
 md-card {
@@ -39,7 +39,9 @@ md-card-content {
     padding-top: 1em;
     padding-bottom: 1em;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
     text-align: right;
+    color: $secondary-text-color;
 }
 
 md-card-actions {
@@ -55,16 +57,29 @@ md-card-title {
     text-align: right;
 }
 
+md-card-subtitle {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: lowercase;
+    color: $primary-color-dark;
+    text-align: right;
+}
+
+md-card-actions {
+    text-size: 2em;
+    text-transform: lowercase;
+}
+
 md-button {
     font-family: 'Ubuntu', sans-serif;
-    text-transform: uppercase;
+        text-size: 2em;
+    text-transform: lowercase;
     color: $primary-color-dark;
     text-align: center;
 }
 
 button {
     font-family: 'Ubuntu', sans-serif;
-    text-transform: uppercase;
+    text-transform: lowercase;
     color: $primary-color-dark;
     text-align: center;
 }
