@@ -25,13 +25,27 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { MainComponent } from './layout/main/main.component';
+import { ForCollectorsComponent } from './for-collectors/for-collectors.component';
+import { ForArtistsComponent } from './for-artists/for-artists.component';
+import { ForInvestorsComponent } from './for-investors/for-investors.component';
+import { HelloComponent } from './hello/hello.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { TeamComponent } from './team/team.component';
+import { TandcComponent } from './tandc/tandc.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    MainComponent
+    MainComponent,
+    ForCollectorsComponent,
+    ForArtistsComponent,
+    ForInvestorsComponent,
+    HelloComponent,
+    GalleryComponent,
+    TeamComponent,
+    TandcComponent
   ],
   imports: [
     BrowserModule,
