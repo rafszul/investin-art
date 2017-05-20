@@ -8,6 +8,7 @@ import { HelloComponent } from './hello/hello.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { TeamComponent } from './team/team.component';
 import { TandcComponent } from './tandc/tandc.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'hello', pathMatch: 'full' },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'gallery', component: GalleryComponent },
   { path: 'about', component: TeamComponent },
   { path: 'tandc', component: TandcComponent },
+  { path: 'privacy', component: PrivacyComponent },
   { path: 'collectors', component: ForCollectorsComponent },
   { path: 'artists', component: ForArtistsComponent },
   { path: 'investors', component: ForInvestorsComponent },
