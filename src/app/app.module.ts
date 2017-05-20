@@ -32,6 +32,7 @@ import { HelloComponent } from './hello/hello.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { TeamComponent } from './team/team.component';
 import { TandcComponent } from './tandc/tandc.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { TandcComponent } from './tandc/tandc.component';
     HelloComponent,
     GalleryComponent,
     TeamComponent,
-    TandcComponent
+    TandcComponent,
+    PrivacyComponent
   ],
   imports: [
     BrowserModule,
