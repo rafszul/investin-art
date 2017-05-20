@@ -31,7 +31,7 @@ import { ForInvestorsComponent } from './for-investors/for-investors.component';
 import { HelloComponent } from './hello/hello.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { TeamComponent } from './team/team.component';
-import { TandcComponent } from './tandc/tandc.component';
+import { TermsComponent } from './terms/terms.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 
 @NgModule({
@@ -46,7 +46,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
     HelloComponent,
     GalleryComponent,
     TeamComponent,
-    TandcComponent,
+    TermsComponent,
     PrivacyComponent
   ],
   imports: [
