@@ -1,12 +1,37 @@
-<!--<md-card>
+<!-- just for reference full card layout // options need setting or it will fail to load
+
+<md-card>
     <md-card-header>
-        <md-card-title>
-            <h3>
-                    hello works! full width
-            </h3>
-        </md-card-title>
+        <md-card-avatar>
+            <img class="md-user-avatar" src="image-source">
+        </md-card-avatar>
+        <md-card-header-text>
+            <span class="md-title">title</span>
+            <span class="md-subhead">sub-title</span>
+        </md-card-header-text>
     </md-card-header>
-</md-card>-->
+    <img ng-src="iamge-source" class="md-card-image" alt="">
+    <md-card-title>
+        <md-card-title-text>
+            <span class="md-headline">card-headline</span>
+            <span class="md-subhead">card-subheadline</span>
+        </md-card-title-text>
+    </md-card-title>
+    <md-card-actions layout="" layout-align="start|center|end|space-around|space-between start|center|end|stretch">
+        <md-button>Action 1</md-button>
+        <md-button>Action 2</md-button>
+        <md-card-icon-actions>
+            <md-button class="button-class" aria-label="label">
+                content
+            </md-button>
+        </md-card-icon-actions>
+    </md-card-actions>
+    <md-card-content>
+        content
+    </md-card-content>
+</md-card>
+
+-->
 
 <!-- -->
 
@@ -17,14 +42,20 @@
         <md-card>
             <md-card-header>
                 <md-card-title>
-                    <h3>
+                    <h1><small>welcome to investinART!</small></h1>
 
-                        hello works! 40 percent for text
-
-                    </h3>
                 </md-card-title>
                 <!--<md-card-subtitle>Subtitle</md-card-subtitle>-->
             </md-card-header>
+            <md-card-content>
+                <p>
+                    Investments in Arts is a niche field but it is not uncommon. In fact, most of the large scale investment portfolios include some form of investments in art. If chosen well, and managed properly, art portfolio will grow in value, bring you joy and expand your investment internationally.
+                </p>
+                <p>
+                <a routerLink="/hello">investinART</a> curates presentation of unique artworks in order to help first-time and seasoned collectors acquire the works of emerging artists from around the world.
+                </p>
+            </md-card-content>
+
         </md-card>
 
     </div>
@@ -33,11 +64,7 @@
         <md-card>
             <md-card-header>
                 <md-card-title>
-                    <h3>
-
-                        hello works! the rest for random image
-
-                    </h3>
+                    
                 </md-card-title>
                 <!--<md-card-subtitle>Subtitle</md-card-subtitle>-->
             </md-card-header>
