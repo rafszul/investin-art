@@ -33,6 +33,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { TeamComponent } from './team/team.component';
 import { TermsComponent } from './terms/terms.component';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { PrivacyComponent } from './privacy/privacy.component';
     GalleryComponent,
     TeamComponent,
     TermsComponent,
-    PrivacyComponent
+    PrivacyComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
